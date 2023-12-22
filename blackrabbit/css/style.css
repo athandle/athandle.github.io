@@ -1,0 +1,10 @@
+  /* Additional styles for dark mode */
+  .dark-mode {
+    background-color: black;
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #2d3748;
+    color: #fff;
+}
