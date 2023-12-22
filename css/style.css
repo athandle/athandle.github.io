@@ -26,3 +26,9 @@
  background-color: black !important;
  border: 1px solid white !important;
 }
+.dark-mode .reports-card{
+  color: white !important
+}
+.dark-mode .reports-card:hover{
+  color: black !important
+}
