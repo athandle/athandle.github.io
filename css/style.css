@@ -8,3 +8,21 @@
     background-color: #2d3748;
     color: #fff;
 }
+.cryto-ideas-cards{
+  background-color: white;
+}
+.dark-mode .cryto-ideas-cards{
+  background-color: #212121;
+  color: white;
+}
+.dark-mode .benefits-containers{
+  background-color: #212121;
+}
+.active-category{
+  background-color: white !important;
+  border: 1px solid black !important;
+}
+.dark-mode .active-category{
+ background-color: black !important;
+ border: 1px solid white !important;
+}
