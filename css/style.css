@@ -32,3 +32,17 @@
 .dark-mode .reports-card:hover{
   color: black !important
 }
+.dark-mode header{
+  background-color: black !important;
+  color: white !important;
+  position: fixed !important;
+}
+header{
+  background-color: white !important;
+  color:black !important;
+  height: 70px;
+  position: fixed !important;
+}
+.blog-cates{
+  display: contents !important;
+}
