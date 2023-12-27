@@ -12,67 +12,108 @@
   <link rel="icon" href="Images/icon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-<!-- ========== HEADER ========== -->
-<!-- ========== HEADER ========== -->
-<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 sm:py-0 dark:bg-slate-900">
-  <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
-    <div class="flex items-center justify-between">
-      <a class="flex-none text-xl font-semibold theme-color" href="/" aria-label="Brand">Black Rabbit</a>
-      <button id="themeToggle" type="button" class="ml-4 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400" data-hs-theme-click-value="dark">
-        <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-      </button>
-      <button id="themeToggle" type="button" class="ml-4 hs-dark-mode-active:block hidden hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400" data-hs-theme-click-value="light">
-        <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 8a2 2 0 1 0 4 4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-      </button>
-      <div class="sm:hidden">
-        <button type="button" class="hs-collapse-toggle w-9 h-9 flex justify-center items-center text-sm font-semibold rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:text-white" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-          <svg class="hs-collapse-open:hidden flex-shrink-0 w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-          <svg class="hs-collapse-open:block flex-shrink-0 hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+  <!-- ========== HEADER ========== -->
+  <!-- ========== HEADER ========== -->
+  <header
+    class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 sm:py-0 dark:bg-slate-900">
+    <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      aria-label="Global">
+      <div class="flex items-center justify-between">
+        <a class="flex-none text-xl font-semibold theme-color" href="/" aria-label="Brand">Black Rabbit</a>
+        <button id="themeToggle" type="button"
+          class="ml-4 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
+          data-hs-theme-click-value="dark">
+          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
           </svg>
         </button>
+        <button id="themeToggle" type="button"
+          class="ml-4 hs-dark-mode-active:block hidden hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
+          data-hs-theme-click-value="light">
+          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 8a2 2 0 1 0 4 4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.93 4.93 1.41 1.41" />
+            <path d="m17.66 17.66 1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="m19.07 4.93-1.41 1.41" />
+          </svg>
+        </button>
+        <div class="sm:hidden">
+          <button type="button"
+            class="hs-collapse-toggle w-9 h-9 flex justify-center items-center text-sm font-semibold rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:text-white"
+            data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+            aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden flex-shrink-0 w-4 h-4" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <svg class="hs-collapse-open:block flex-shrink-0 hidden w-4 h-4" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-    <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
-      <div
-      class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-      <a class="font-medium sm:py-6 mr-4" href="#" aria-current="page">Landing</a>
-      <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="#">Account</a>
-      <a class="font-medium text-white/[.8] hover:text-gray sm:py-6  mr-4" href="#">Work</a>
-      <a class="font-medium text-white/[.8] hover:text-gray sm:py-6" href="/js/blogs.html">Blogs</a>
-      </a>
-    </div>
-    </div>
-    <div class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
-      <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7"> 
-      <a class="flex items-center gap-x-2 mr-4 font-semibold text-gray-500 hover:text-orange-600 sm:border-s sm:border-gray-300 sm:my-6 sm:ps-6 dark:border-gray-700 dark:text-gray-400 dark:hover:theme-color" href="#">
-        <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        Log in
-      </a>
-      <button type="button" class="py-2 px-3 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
-        Join Now
-      </button>
-    </div>
-  </div>
-  </nav>
-</header>
-<!-- ========== END HEADER ========== -->
+      <div id="navbar-collapse-with-animation"
+        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div
+          class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+          <a class="font-medium sm:py-6 mr-4" href="#" aria-current="page">Landing</a>
+          <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="#">Account</a>
+          <a class="font-medium text-white/[.8] hover:text-gray sm:py-6  mr-4" href="#">Work</a>
+          <a class="font-medium text-white/[.8] hover:text-gray sm:py-6" href="/js/blogs.html">Blogs</a>
+          </a>
+        </div>
+      </div>
+      <div class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div
+          class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+          <a class="flex items-center gap-x-2 mr-4 font-semibold text-gray-500 hover:text-orange-600 sm:border-s sm:border-gray-300 sm:my-6 sm:ps-6 dark:border-gray-700 dark:text-gray-400 dark:hover:theme-color"
+            href="#">
+            <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Log in
+          </a>
+          <button type="button"
+            class="py-2 px-3 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
+            Join Now
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
 
-<!-- ========== END HEADER ========== -->
+  <!-- ========== END HEADER ========== -->
   <div class="overflow-hidden">
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div class="relative mx-auto max-w-4xl grid space-y-5 sm:space-y-10">
         <!-- Title -->
         <div class="text-center">
-          
+
           <h1 class="text-3xl text-grey font-bold sm:text-5xl lg:text-6xl lg:leading-tight dark:text-white">
             The revolution for long term <span class="theme-color">crypto investors begin here</span>
           </h1>
           <p class="text-xl font-semibold text-gray tracking-wide uppercase mb-3 dark:text-white mt-2">
-            We are Industry-leading crypto research & analysis firm on a mission to make the world smarter, happier and richer.
+            We are Industry-leading crypto research & analysis firm on a mission to make the world smarter, happier and
+            richer.
           </p>
         </div>
         <!-- End Title -->
@@ -80,7 +121,7 @@
       </div>
     </div>
   </div>
-  <div class="mx-10">
+  <div class="mx-10 media-container">
     <video width="100%" height="360" controls class="rounded-md">
       <source src="https://www.youtube.com/watch?v=UFOgRmI6bg0&t=123s">
       Your browser does not support the video tag.
@@ -88,13 +129,176 @@
 
   </div>
   <div class="mx-auto max-w-4xl grid space-y-5 sm:space-y-10 text-center mb-5 mt-5">
-    We specialize in researching crytocurrency, a unique asset class. Our mission is to help traditional finance enter the digital asset world using our special knowledge and data.
+    We specialize in researching crytocurrency, a unique asset class. Our mission is to help traditional finance enter
+    the digital asset world using our special knowledge and data.
   </div>
+
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div class="mb-5">
+      <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white ">BlackRabbit <span
+          class="theme-color">Services</span>
+      </h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-6 md:gap-10 ">
+      <!-- Card -->
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900 relative themeToggle">
+        <div class=" items-center gap-x-4 mb-3">
+          <div
+            class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
+            <svg class="flex-shrink-0 w-6 h-6 text-orange-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="13.5" cy="6.5" r=".5" />
+              <circle cx="17.5" cy="10.5" r=".5" />
+              <circle cx="8.5" cy="7.5" r=".5" />
+              <circle cx="6.5" cy="12.5" r=".5" />
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+            </svg>
+          </div>
+          <div class="flex-shrink-0">
+            <div>
+              <h3 class="block text-lg font-semibold text-gray dark:text-white">Our Analysts
+              </h3>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray dark:text-gray-400">Our analysts are specialists in different web3 areas, focusing on
+          understanding each sector thoroughly. We’re proud of our five year track record of helping investors harness
+          crypto’s power..</p>
+      </div>
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-90 relative themeToggle0">
+        <div class="items-center gap-x-4 mb-3">
+          <div
+            class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
+            <svg class="flex-shrink-0 w-6 h-6 text-orange-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h20" />
+              <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" />
+              <path d="m7 21 5-5 5 5" />
+            </svg>
+          </div>
+          <div class="flex-shrink-0">
+            <h3 class="block text-lg font-semibold text-gray dark:text-white">Actionable Reports</h3>
+          </div>
+        </div>
+        <p class="text-gray dark:text-gray-400">Our reports are the most actionable in the industry because they are the
+          most in-depth, data-driven, and opinionated reports available. Our top-down market insights provide key
+          context and our bottom-up analysis uncovers early trends.
+        </p>
+      </div>
+      <!-- End Card -->
+
+      <!-- Card -->
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900 relative">
+        <div class="items-center gap-x-4 mb-3">
+          <div
+            class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
+            <svg class="flex-shrink-0 w-6 h-6 text-orange-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+              <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+              <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+              <path d="M2 7h20" />
+              <path
+                d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7" />
+            </svg>
+          </div>
+          <div class="flex-shrink-0">
+            <h3 class="block text-lg font-semibold text-gray dark:text-white">10X Your decision making(Macro & Micro)
+            </h3>
+          </div>
+        </div>
+        <p class="text-gray dark:text-gray-400">We bring together everything that the most ambitious crypto investors
+          and teams need to make critical decisions. We synthesise the best data and craft insights.
+          We don't just look at crypto data; we connect it to the bigger picture. Our analysts combine broad insights
+          with in-depth crypto market analysis to give a complete view of the digital asset landscape.
+        </p>
+      </div>
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900 relative">
+        <div class=" items-center gap-x-4 mb-3">
+          <div
+            class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
+            <svg class="flex-shrink-0 w-6 h-6 text-orange-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2" />
+              <path d="m15.194 13.707 3.814 1.86-1.86 3.814" />
+              <path
+                d="M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4" />
+            </svg>
+          </div>
+          <div class="flex-shrink-0">
+            <h3 class="block text-lg font-semibold text-gray dark:text-white">Custom Analysis </h3>
+          </div>
+        </div>
+        <p class="text-gray dark:text-gray-400">Access personalized digital asset research reports crafted by our expert
+          analyst team for both internal and external purposes. Our specialization lies in producing exceptional custom
+          research content, catering to organizations such as investment banks, hedge funds, exchanges, and crypto
+          protocols.
+        </p>
+      </div>
+      <!-- End Card -->
+
+      <!-- Card -->
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 relative">
+        <div class=" items-center gap-x-4 mb-3">
+          <div
+            class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
+            <svg class="flex-shrink-0 w-6 h-6 text-orange-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+              <circle cx="17.5" cy="17.5" r="3.5" />
+            </svg>
+          </div>
+          <div class="flex-shrink-0">
+            <h3 class="block text-lg font-semibold text-gray dark:text-white">Connecting Institutional TradFi with
+              Crypto</h3>
+          </div>
+        </div>
+        <p class="text-gray dark:text-gray-400">We provide advisory services to firms exploring ways to participate in
+          the crypto space. Services are aimed at both non-crypto and crypto-native actors.
+
+          Our goal is to make BlackRabbit research the only piece of content you need to fully understand the narrative
+          and make your decision.
+        </p>
+      </div>
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 relative">
+        <div class=" items-center gap-x-4 mb-3">
+          <div
+            class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
+            <svg class="flex-shrink-0 w-6 h-6 text-orange-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+              <circle cx="17.5" cy="17.5" r="3.5" />
+            </svg>
+          </div>
+          <div class="flex-shrink-0">
+            <h3 class="block text-lg font-semibold text-gray dark:text-white">Advisory</h3>
+          </div>
+        </div>
+        <p class="text-gray dark:text-gray-400">BlackRabbit offers advisory services to companies looking to engage in
+          the crypto space, catering to both non-crypto and crypto-native entities.
+        </p>
+      </div>
+      <!-- End Card -->
+    </div>
+  </div>
+
+
+
 
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto benefits-containers">
     <!-- Title -->
     <div class="mb-10 ">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white text-center">Benefits</h2>
+      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Benefits</h2>
       <!-- <p class="mt-1 text-gray-600 dark:text-gray-400">See how game-changing companies are making the most of every engagement with Preline.</p> -->
     </div>
     <!-- End Title -->
@@ -106,11 +310,7 @@
         <div class="aspect-w-16 aspect-h-9">
           <img class="rounded-xl object-cover"
             src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
-            alt="Image Description"
-            width="100%"
-            height="200px"
-            style="height: 200px;"
-            >
+            alt="Image Description" width="100%" height="200px" style="height: 200px;">
         </div>
         <h3
           class="mt-2 text-lg font-medium text-gray group-hover:text-orange-600 dark:text-white dark:group-hover:text-white">
@@ -128,10 +328,7 @@
         <div class="aspect-w-16 aspect-h-9">
           <img class="rounded-xl object-cover"
             src="https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80"
-            alt="Image Description"
-            width="100%"
-            height="200px"
-            style="height: 200px;">
+            alt="Image Description" width="100%" height="200px" style="height: 200px;">
         </div>
         <h3
           class="mt-2 text-lg font-medium text-gray group-hover:text-orange-600 dark:text-white dark:group-hover:text-white">
@@ -148,10 +345,7 @@
         <div class="aspect-w-16 aspect-h-9">
           <img class="rounded-xl object-cover"
             src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
-            alt="Image Description"
-            width="100%"
-            height="200px"
-            style="height: 200px;">
+            alt="Image Description" width="100%" height="200px" style="height: 200px;">
         </div>
         <h3
           class="mt-2 text-lg font-medium text-gray group-hover:text-orange-600 dark:text-whites dark:group-hover:text-white">
@@ -167,9 +361,12 @@
   </div>
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+    <div class="max-w-8xl  mb-10 lg:mb-14 flex justify-between ml-2 mr-2">
       <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Reports</h2>
-      <!-- <p class="mt-1 text-gray-600 dark:text-gray-400">See how game-changing companies are making the most of every engagement with Preline.</p> -->
+      <button type="button"
+        class="py-2 px-3 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
+        View All
+      </button>
     </div>
     <!-- End Title -->
 
@@ -177,15 +374,15 @@
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Card -->
       <a class=" reports-card-group  rounded-xl p-2 transition-all relative" href="#">
-        <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">New</span>
+        <span
+          class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">New</span>
 
         <div class="aspect-w-16 aspect-h-10">
           <img class="w-full object-cover"
             src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
-            alt="Image Description"
-            style="height: 300px;">
+            alt="Image Description" style="height: 300px;">
         </div>
-        <h3 class="p-8 stndrd-btn text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
+        <h3 class="p-8 mt-1 text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
           Unity’s inside sales team drives 80% of its revenue with Preline.
         </h3>
         <!-- <p class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray dark:text-gray-200">
@@ -201,14 +398,14 @@
 
       <!-- Card -->
       <a class=" reports-card-group rounded-xl p-2 transition-all dark:hover:bg-white/[.05] relative" href="#">
-        <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">New</span>
+        <span
+          class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">New</span>
         <div class="aspect-w-16 aspect-h-10">
           <img class="w-full object-cover"
             src="https://images.unsplash.com/photo-1669739432571-aee1f057c41f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80"
-            alt="Image Description"
-            style="height: 300px;">
+            alt="Image Description" style="height: 300px;">
         </div>
-        <h3 class="p-8 stndrd-btn text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
+        <h3 class="p-8 mt-1 text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
           Living Spaces creates a unified experience across the customer journey.
         </h3>
         <!-- <p class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray dark:text-gray-200">
@@ -224,14 +421,14 @@
 
       <!-- Card -->
       <a class="reports-card-group rounded-xl p-2 transition-all dark:hover:bg-white/[.05] relative" href="#">
-        <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">New</span>
+        <span
+          class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">New</span>
         <div class="aspect-w-16 aspect-h-10">
           <img class="w-full object-cover"
             src="https://images.unsplash.com/photo-1657299171054-e679f630a776?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-            alt="Image Description"
-            style="height: 300px;">
+            alt="Image Description" style="height: 300px;">
         </div>
-        <h3 class="p-8 stndrd-btn text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
+        <h3 class="p-8 mt-1 text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
           Atlassian powers sales and support at scale with Preline.
         </h3>
         <!-- <p class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray dark:text-gray-200">
@@ -249,7 +446,7 @@
   </div>
   <div class="mx-auto text-center">
     <h1 class="text-xl text-grey font-bold sm:text-xl lg:text-2xl lg:leading-tight dark:text-white">
-      Our Mission: To empower investor success. 
+      Our Mission: To empower investor success.
       <div class="theme-color">Allow Blackrabbit to help you take the next step in your crypto journey.</div>
     </h1>
     <p class="text-xl font-semibold text-gray tracking-wide uppercase mb-3 dark:text-white mt-2">
@@ -258,9 +455,10 @@
   </div>
   <div class="max-w-6xl py-10 px-4 sm:px-6 lg:px-8 lg:py-16 mx-auto">
     <div class="max-w-xl text-center mx-auto">
-      
+
       <div class="mb-5">
-        <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white">Subscribe to <span class="theme-color">newsletter</span></h2>
+        <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white">Subscribe to <span
+            class="theme-color">newsletter</span></h2>
       </div>
 
       <form>
@@ -271,7 +469,7 @@
               class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
               placeholder="Enter your email">
           </div>
-          <a class="w-full stndrd-btn sm:w-auto whitespace-nowrap py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+          <a class="w-full mt-1 sm:w-auto stndrd-btn whitespace-nowrap py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
             href="#">
             Subscribe
           </a>
@@ -282,20 +480,21 @@
 
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 
-    <div class="mb-5 text-center">
-      <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white">Weekly calls /<span class="theme-color">expert insights</span></h2>
+    <div class="mb-5">
+      <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white">Weekly calls /<span
+          class="theme-color">expert insights</span></h2>
     </div>
 
     <div class="flex flex-row">
-      <div class="me-5" style="width: 40%; margin-right: 20px;">
+      <div class="me-5 hidden sm:block" style="width: 40%; margin-right: 20px;">
 
         <img style="width: 100%; height: 100%" class="rounded-lg"
           src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
           alt="Image Description">
       </div>
-      <div style="width: 75%" class="grid grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
+      <div class="grid grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
         <div class="flex sm:flex sm:items-center gap-y-3 gap-x-4 justify-between">
-         
+
 
           <div class="sm:flex sm:flex-col sm:h-full">
             <div>
@@ -337,13 +536,13 @@
             <!-- End Social Brands -->
           </div>
           <img class="rounded-lg w-20 h-20"
-          src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-          alt="Image Description">
+            src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            alt="Image Description">
         </div>
         <!-- End Col -->
 
         <div class="flex sm:flex sm:items-center gap-y-3 gap-x-4 justify-between">
-        
+
 
           <div class="sm:flex sm:flex-col sm:h-full">
             <div>
@@ -385,13 +584,13 @@
             <!-- End Social Brands -->
           </div>
           <img class="rounded-lg w-20 h-20"
-          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-          alt="Image Description">
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            alt="Image Description">
         </div>
         <!-- End Col -->
 
         <div class="flex sm:flex sm:items-center gap-y-3 gap-x-4 justify-between">
-         
+
 
           <div class="sm:flex sm:flex-col sm:h-full">
             <div>
@@ -433,13 +632,13 @@
             <!-- End Social Brands -->
           </div>
           <img class="rounded-lg w-20 h-20"
-          src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-          alt="Image Description">
+            src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            alt="Image Description">
         </div>
         <!-- End Col -->
 
         <div class="flex sm:flex sm:items-center gap-y-3 gap-x-4 justify-between">
-       
+
 
           <div class="sm:flex sm:flex-col sm:h-full">
             <div>
@@ -481,13 +680,13 @@
             <!-- End Social Brands -->
           </div>
           <img class="rounded-lg w-20 h-20"
-          src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-          alt="Image Description">
+            src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            alt="Image Description">
         </div>
         <!-- End Col -->
 
         <div class="flex sm:flex sm:items-center gap-y-3 gap-x-4 justify-between">
-        
+
 
           <div class="sm:flex sm:flex-col sm:h-full">
             <div>
@@ -529,13 +728,13 @@
             <!-- End Social Brands -->
           </div>
           <img class="rounded-lg w-20 h-20"
-          src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-          alt="Image Description">
+            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            alt="Image Description">
         </div>
         <!-- End Col -->
 
         <div class="flex sm:flex sm:items-center gap-y-3 gap-x-4 justify-between">
-       
+
 
           <div class="sm:flex sm:flex-col sm:h-full">
             <div>
@@ -577,8 +776,8 @@
             <!-- End Social Brands -->
           </div>
           <img class="rounded-lg w-20 h-20"
-          src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-          alt="Image Description">
+            src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            alt="Image Description">
         </div>
         <!-- End Col -->
       </div>
@@ -587,55 +786,82 @@
 
 
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto benefits-containers">
-    <div class="mb-5 text-center">
-      <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white ">Explainers/<span class="theme-color">Podcasts</span> (Comming Soon)
+    <div class="mb-5 flex justify-between">
+      <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white ">Explainers/<span
+          class="theme-color">Podcasts</span> (Comming Soon)
       </h2>
+      <button type="button"
+        class="py-2 px-3 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
+        Check All
+      </button>
     </div>
     <!-- Grid -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 " style="padding: 0 10px;">
       <!-- Card -->
-      <a class="group block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 flex flex-row"
-        href="#">
-        <div>
-
+      <a class="group block reports-card-group p-2 transition-all" href="#">
+        <div class="aspect-w-16 aspect-h-9">
+          <img class=" object-cover"
+            src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+            alt="Image Description" width="100%" height="200px" style="height: 200px;">
+        </div>
+        <div class="stndrd-btn p-4">
+          <div class="flex justify-between">
+            <p class="mt-2 text-sm text-gray dark:text-white">
+              September 12, 2022
+            </p>
+            <p class="mt-2 text-sm text-gray dark:text-white">
+              By- Aman
+            </p>
+          </div>
           <h3
-            class="mt-2 text-lg font-medium text-gray group-hover:text-orange-600 dark:text-white dark:group-hover:text-white">
+            class="mt-2 text-lg  font-medium text-gray group-hover:text-orange-600 dark:text-white dark:group-hover:text-white">
             Unity’s inside sales team drives 80% of its revenue with Preline.
           </h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-            September 12, 2022
-          </p>
-        </div>
-        <div style="width: 80%;" class="aspect-w-16 aspect-h-9">
-          <img class="w-full object-cover rounded-xl"
-            src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
-            alt="Image Description"
-            style="height: 300px;">
-        </div>
+          <div class="flex items-start">
+            <p class="mt-2 text-sm text-gray dark:text-white  w-9">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex ea quibusdam illum culpa aperiam
+              repellat. Perspiciatis magni obcaecati iure error eum asperiores? Provident vitae nihil omnis amet
+              perspiciatis minima!
+            </p>
+            <button type="button"
+              class=" mt-3 text-white hover:text-white border border-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Watch</button>
+          </div>
 
+        </div>
       </a>
       <!-- End Card -->
 
       <!-- Card -->
-      <a class="group block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 flex flex-row"
-        href="#">
-        <div>
-
+      <a class="group block reports-card-group p-2 transition-all" href="#">
+        <div class="aspect-w-16 aspect-h-9">
+          <img class=" object-cover"
+            src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+            alt="Image Description" width="100%" height="200px" style="height: 200px;">
+        </div>
+        <div class="stndrd-btn p-4">
+          <div class="flex justify-between">
+            <p class="mt-2 text-sm text-gray dark:text-white">
+              September 12, 2022
+            </p>
+            <p class="mt-2 text-sm text-gray dark:text-white">
+              By- Aman
+            </p>
+          </div>
           <h3
-            class="mt-2 text-lg font-medium text-gray group-hover:text-orange-600 dark:text-white dark:group-hover:text-white">
+            class="mt-2 text-lg  font-medium text-gray group-hover:text-orange-600 dark:text-white dark:group-hover:text-white">
             Unity’s inside sales team drives 80% of its revenue with Preline.
           </h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-            September 12, 2022
-          </p>
-        </div>
-        <div style="width: 80%;" class="aspect-w-16 aspect-h-9">
-          <img class="w-full object-cover rounded-xl"
-            src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
-            alt="Image Description"
-            style="height: 300px;">
-        </div>
+          <div class="flex items-start">
+            <p class="mt-2 text-sm text-gray dark:text-white  w-9">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex ea quibusdam illum culpa aperiam
+              repellat. Perspiciatis magni obcaecati iure error eum asperiores? Provident vitae nihil omnis amet
+              perspiciatis minima!
+            </p>
+            <button type="button"
+              class=" mt-3 text-white hover:text-white border border-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Watch</button>
+          </div>
 
+        </div>
       </a>
       <!-- End Card -->
     </div>
@@ -643,13 +869,15 @@
   </div>
 
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <div class="mb-5 text-center">
-      <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white ">Crypto <span class="theme-color">Ideas</span>
+    <div class="mb-5">
+      <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white ">Crypto <span
+          class="theme-color">Ideas</span>
       </h2>
     </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-6 md:gap-10">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-6 md:gap-10 ">
       <!-- Card -->
-      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900">
+      <div
+        class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900 relative themeToggle relative">
         <div class="flex items-center gap-x-4 mb-3">
           <div
             class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
@@ -670,7 +898,8 @@
         </div>
         <p class="text-gray dark:text-gray-400">The simplest way to keep your portfolio always up-to-date.</p>
       </div>
-      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900">
+      <div
+        class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-90 relative themeToggle relative">
         <div class="flex items-center gap-x-4 mb-3">
           <div
             class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
@@ -691,7 +920,7 @@
       <!-- End Card -->
 
       <!-- Card -->
-      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900">
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900 relative">
         <div class="flex items-center gap-x-4 mb-3">
           <div
             class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
@@ -713,7 +942,7 @@
         <p class="text-gray dark:text-gray-400">Get your goods in front of millions of potential customers with
           ease.</p>
       </div>
-      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900">
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900 relative">
         <div class="flex items-center gap-x-4 mb-3">
           <div
             class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
@@ -732,7 +961,7 @@
         </div>
         <p class="text-gray dark:text-gray-400">New design projects delivered to your inbox each morning.</p>
       </div>
-      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900">
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 dark:bg-slate-900 relative">
         <div class="flex items-center gap-x-4 mb-3">
           <div
             class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
@@ -756,7 +985,7 @@
       <!-- End Card -->
 
       <!-- Card -->
-      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5">
+      <div class="w-full h-full cryto-ideas-cards shadow-lg rounded-lg p-5 relative">
         <div class="flex items-center gap-x-4 mb-3">
           <div
             class="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full  dark:border-blue-900 dark:bg-blue-800">
@@ -783,19 +1012,22 @@
     <div class="mb-5 text-center">
       <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white">Disclaimer</h2>
     </div>
-    <p class="text-center pl-10 pr-10">The reports we publish at blackrabbit is for research purposes only and not financial advice. Confirm information independently. Bitcoin and digital assets are risky—never invest more than you're willing to lose. Do your own research; this report is for education, not investment decisions. Not financial or investment advice. Any capital-related decisions you make are your full responsibility.</p>
+    <p class="text-center pl-10 pr-10">The reports we publish at blackrabbit is for research purposes only and not
+      financial advice. Confirm information independently. Bitcoin and digital assets are risky—never invest more than
+      you're willing to lose. Do your own research; this report is for education, not investment decisions. Not
+      financial or investment advice. Any capital-related decisions you make are your full responsibility.</p>
   </div>
   <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
- 
+
     <div class="pt-5 mt-5 border-t border-gray-200 dark:border-gray-700">
       <div class="sm:flex sm:justify-between sm:items-center">
         <div class="flex items-center gap-x-3">
           <!-- End Language Dropdown -->
 
-          
+
           <div class="space-x-4">
             <a class="inline-flex theme-color gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            href="#">BlackRabbit.com</a>
+              href="#">BlackRabbit.com</a>
             <a class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200" href="#">
               <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" viewBox="0 0 16 16">

@@ -50,12 +50,20 @@ header{
   background-color: #ec672a !important;
   color: white !important;
 }
+.stndrd-watch-btn{
+  background-color: #ec672a !important;
+  color: white !important;
+  outline: 2px solid white !important; 
+
+}
 .reports-card-txt-container{
   height: 150px !important;
   max-height: 150px !important;
 }
 .reports-card-group:hover{
-  background-color: #ec672a !important;
+  /* background-color: #ec672a !important; */
+  text-decoration: underline;
+  color: white;
 }
 #themeToggle{
   background-color: transparent !important;
@@ -67,4 +75,22 @@ header{
 .price-container{
   border-color: #ec672a !important;
 
+}
+.dark-mode .cryto-ideas-cards{
+  background-color: black !important;
+}
+.media-container{
+  margin: 0 15%;
+}
+.dark-mode .cryto-ideas-cards::before{
+  content: '';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    display: block;
+    z-index: -1;
+    width: calc(100% - 10px);
+    border-radius: 50px;
+    height: 100%;
+    box-shadow: 0 0 20px -6px #ec672a !important;
 }
