@@ -60,10 +60,13 @@ header{
   height: 150px !important;
   max-height: 150px !important;
 }
-.reports-card-group:hover{
-  /* background-color: #ec672a !important; */
+.dark-mode .reports-card-group:hover{
   text-decoration: underline;
   color: white;
+}
+.reports-card-group:hover{
+  text-decoration: underline;
+  color: black;
 }
 #themeToggle{
   background-color: transparent !important;
@@ -93,4 +96,12 @@ header{
     border-radius: 50px;
     height: 100%;
     box-shadow: 0 0 20px -6px #ec672a !important;
+}
+.dark-mode .report-cards{
+  background-color: #141414 !important;
+  padding: 0 10px;
+}
+ .report-cards{
+  background-color: rgb(235, 231, 231) !important;
+  padding: 0 10px;
 }
