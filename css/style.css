@@ -60,11 +60,11 @@ header{
   height: 150px !important;
   max-height: 150px !important;
 }
-.dark-mode .reports-card-group:hover{
+.dark-mode .reports-card-txt-container:hover{
   text-decoration: underline;
   color: white;
 }
-.reports-card-group:hover{
+.reports-card-txt-container:hover{
   text-decoration: underline;
   color: black;
 }
@@ -104,4 +104,28 @@ header{
  .report-cards{
   background-color: rgb(235, 231, 231) !important;
   padding: 0 10px;
+}
+.dark-mode .podcast-card{
+  background-color: #1c1c1d !important;
+}
+.podcast-card{
+  background-color: rgb(235, 231, 231) !important;
+}
+ .podcast-card-details{
+  background: transparent !important;
+}
+.email-border{
+  border:2px solid #ec672a;
+}
+.experts-cards{
+  margin-left: -4%;
+}
+.article-image{
+  width: 80%;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .experts-cards{
+    margin-left: 0;
+  }
 }
