@@ -3,27 +3,31 @@
     margin: 0 40px;
   } */
   .crypto-ideas-block{
-    margin: 0 40px;
+    margin: 0 8%;
   }
   .benefits-block{
-    margin: 0 40px;
+    margin: 0 8%;
   }
   .experts-block{
-    margin: 0 40px;
+    margin: 0 8%;
   }
   .benefits-block{
-    margin: 0 40px;
+    margin: 0 8%;
   }
   .reports-block{
-    margin: 0 40px;
+    margin: 0 8%;
   }
   .services-block{
-    margin: 0 40px;
+    margin: 0 8%;
+  }
+  .blogs-container{
+    margin: 0 8%;
   }
   .dark-mode {
     background-color: black;
     color: #fff;
 }
+
 
 .dark-mode button {
   background-color: #ec672a !important;
@@ -150,3 +154,23 @@ header{
     margin-left: 0;
   }
 }
+.report-cards:hover {
+  -ms-transform: scale(0.5); /* IE 9 */
+  -webkit-transform: scale(0.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+  text-decoration: underline;
+}
+.podcast-card:hover{
+  -ms-transform: scale(0.5); /* IE 9 */
+  -webkit-transform: scale(0.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+  text-decoration: underline;
+}
+.blog-card:hover{
+  -ms-transform: scale(0.5); /* IE 9 */
+  -webkit-transform: scale(0.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+  text-decoration: underline;
+
+}
+
