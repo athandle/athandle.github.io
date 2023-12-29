@@ -154,23 +154,24 @@ header{
     margin-left: 0;
   }
 }
-.report-cards:hover {
-  -ms-transform: scale(0.5); /* IE 9 */
-  -webkit-transform: scale(0.5); /* Safari 3-8 */
-  transform: scale(1.2); 
-  text-decoration: underline;
-}
-.podcast-card:hover{
-  -ms-transform: scale(0.5); /* IE 9 */
-  -webkit-transform: scale(0.5); /* Safari 3-8 */
-  transform: scale(1.2); 
-  text-decoration: underline;
-}
-.blog-card:hover{
-  -ms-transform: scale(0.5); /* IE 9 */
-  -webkit-transform: scale(0.5); /* Safari 3-8 */
-  transform: scale(1.2); 
-  text-decoration: underline;
 
+.image-container {
+ /* Set the height of the container */
+  overflow: hidden; /* Hide the overflow to keep the zoomed image within the container */
 }
 
+.zoomed-image {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Maintain the aspect ratio of the image while covering the container */
+  transition: transform 0.4s ease; /* Add a smooth transition effect for the zoom */
+}
+
+/* Add hover effect to zoom in and zoom out on hover */
+.image-container:hover .zoomed-image {
+  transform: scale(1.2); /* Set the zoom level on hover (1.2 means 120% zoom) */
+}
+
+.image-container:not(:hover) .zoomed-image {
+  transform: scale(1); /* Set the original scale when not hovering */
+}
