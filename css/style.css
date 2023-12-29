@@ -1,5 +1,23 @@
   /* Additional styles for dark mode */
-  body{
+  /* body{
+    margin: 0 40px;
+  } */
+  .crypto-ideas-block{
+    margin: 0 40px;
+  }
+  .benefits-block{
+    margin: 0 40px;
+  }
+  .experts-block{
+    margin: 0 40px;
+  }
+  .benefits-block{
+    margin: 0 40px;
+  }
+  .reports-block{
+    margin: 0 40px;
+  }
+  .services-block{
     margin: 0 40px;
   }
   .dark-mode {
