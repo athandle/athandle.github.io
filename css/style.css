@@ -1,4 +1,7 @@
   /* Additional styles for dark mode */
+  body{
+    margin: 0 50px;
+  }
   .dark-mode {
     background-color: black;
     color: #fff;
