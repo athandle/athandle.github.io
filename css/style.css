@@ -175,10 +175,19 @@ header{
 .image-container:not(:hover) .zoomed-image {
   transform: scale(1); /* Set the original scale when not hovering */
 }
-.services-block-content{
+.block-content{
   margin: auto !important;
   max-width: 80% !important;
 }
-.services-block-title{
+.block-title{
   margin-left: 12% !important;
+}
+.weekly-cards{
+  max-width: 228px !important;
+  max-height: 88px !important;
+}
+.weekly-cards-container{
+  margin: auto !important;
+  max-width: 1101px !important;
+  max-height: 224px !important;
 }
