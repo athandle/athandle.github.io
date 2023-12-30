@@ -143,7 +143,7 @@ header{
   border:2px solid #ec672a;
 }
 .experts-cards{
-  margin-left: -7%;
+  /* margin-left: -7%; */
 }
 .article-image{
   width: 80%;
@@ -194,16 +194,23 @@ header{
 }
 .horizontal-line{
   margin:  auto 2%;
-  width: 82%;
+  width: 75%;
   background-color: #ec672a;
 }
 .crypto-horizontal-line{
   margin:  auto 2%;
-  width: 78%;
+  width: 68%;
   background-color: #ec672a;
 }
 .podcast-horizontal-line{
   margin:  auto 2%;
-  width: 58%;
+  width: 38%;
   background-color: #ec672a;
+}
+.disclaimer{
+  padding: 4% 0;
+  border-top: 2px solid #ec672a !important;
+}
+.footer{
+  border-top: 2px solid #ec672a !important;
 }
