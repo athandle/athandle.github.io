@@ -83,7 +83,7 @@ header{
 }
 .reports-card-txt-container{
   height: auto !important;
-  max-height: 150px !important;
+  max-height: 220px !important;
 }
 .dark-mode .reports-card-txt-container:hover{
   text-decoration: underline;
@@ -193,18 +193,18 @@ header{
   max-height: 224px !important;
 }
 .horizontal-line{
-  margin:  auto 2%;
+  margin:  auto -10% auto -5%;
   width: 75%;
   background-color: #ec672a;
 }
 .crypto-horizontal-line{
-  margin:  auto 2%;
+  margin:  auto -8% auto -1.5%;
   width: 68%;
   background-color: #ec672a;
 }
 .podcast-horizontal-line{
-  margin:  auto 2%;
-  width: 38%;
+  margin:  auto -8% auto -7%;
+  width: 20%;
   background-color: #ec672a;
 }
 .disclaimer{
