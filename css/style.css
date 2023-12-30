@@ -21,7 +21,7 @@
     margin: 0 8%;
   }
   .blogs-container{
-    margin: 0 8%;
+    margin: 0 20%;
   }
   .dark-mode {
     background-color: black;
@@ -180,7 +180,8 @@ header{
   max-width: 80% !important;
 }
 .block-title{
-  margin-left: 12% !important;
+  margin-left: 10.5% !important;
+  max-width: 80% !important;
 }
 .weekly-cards{
   max-width: 228px !important;
@@ -190,4 +191,19 @@ header{
   margin: auto !important;
   max-width: 1101px !important;
   max-height: 224px !important;
+}
+.horizontal-line{
+  margin:  auto 2%;
+  width: 82%;
+  background-color: #ec672a;
+}
+.crypto-horizontal-line{
+  margin:  auto 2%;
+  width: 78%;
+  background-color: #ec672a;
+}
+.podcast-horizontal-line{
+  margin:  auto 2%;
+  width: 58%;
+  background-color: #ec672a;
 }
