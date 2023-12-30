@@ -82,7 +82,7 @@ header{
 
 }
 .reports-card-txt-container{
-  height: 150px !important;
+  height: auto !important;
   max-height: 150px !important;
 }
 .dark-mode .reports-card-txt-container:hover{
