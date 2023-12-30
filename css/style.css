@@ -108,7 +108,7 @@ header{
   background-color: black !important;
 }
 .media-container{
-  margin: 0 15%;
+  margin: 0 25% !important;
 }
 .dark-mode .cryto-ideas-cards::before{
   content: '';
@@ -174,4 +174,11 @@ header{
 
 .image-container:not(:hover) .zoomed-image {
   transform: scale(1); /* Set the original scale when not hovering */
+}
+.services-block-content{
+  margin: auto !important;
+  max-width: 80% !important;
+}
+.services-block-title{
+  margin-left: 12% !important;
 }
