@@ -2,26 +2,30 @@
   /* body{
     margin: 0 40px;
   } */
-  .crypto-ideas-block{
-    margin: 0 8%;
-  }
-  .benefits-block{
-    margin: 0 8%;
-  }
-  .experts-block{
-    margin: 0 8%;
-  }
-  .benefits-block{
-    margin: 0 8%;
-  }
-  .reports-block{
-    margin: 0 8%;
-  }
-  .services-block{
-    margin: 0 8%;
+
+  @media only screen and (min-width: 2800px) {
+    .crypto-ideas-block{
+      margin: 0 20%;
+    }
+    .benefits-block{
+      margin: 0 20%;
+    }
+    .experts-block{
+      margin: 0 20%;
+    }
+    .benefits-block{
+      margin: 0 20%;
+    }
+    .reports-block{
+      margin: 0 20%;
+    }
+    .services-block{
+      margin: 0 20%;
+    }
+ 
   }
   .blogs-container{
-    margin: 0 20%;
+    margin: 0 10%;
   }
   .dark-mode {
     background-color: black;
@@ -62,11 +66,12 @@ header{
   display: contents !important;
 }
 .report-new-tag{
-  right: 30px;
-  top: 30px;
+  right: 20px;
+  top: 20px;
   padding: 2px 10px;
   background-color: #ec672a !important;
   color: white;
+  z-index: 1;
 }
 .theme-color{
   color: #ec672a !important;
@@ -233,15 +238,23 @@ header{
   box-shadow: 0 0 30px rgb(0 0 0 / 35%);
   margin-top: -0.7rem;
 }
+.podcast-card-animation:hover {
+  transition: 0.4s ease-out;
+  box-shadow: 0 0 30px rgb(0 0 0 / 35%);
+  margin-top: -0.7rem;
+}
 .risk_targeting{
-  height: 348px; 
-  max-height: 348px;
-  width: 322px; 
-  max-width: 322px;
+  height: auto; 
+  max-height: auto;
+  width: 90%; 
+  max-width: 90%;
 }
 .benefits-card-dimension{
   height: 170px !important;
   width: 170px !important;
   max-height: 170px !important;
   max-width: 170px !important;
+}
+.try-now{
+  width: 20%;
 }
