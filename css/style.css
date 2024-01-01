@@ -214,3 +214,34 @@ header{
 .footer{
   border-top: 2px solid #ec672a !important;
 }
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+.card:hover {
+  transition: 0.4s ease-out;
+  box-shadow: 0 0 30px rgb(0 0 0 / 35%);
+  margin-top: -0.7rem;
+}
+.risk_targeting{
+  height: 348px; 
+  max-height: 348px;
+  width: 322px; 
+  max-width: 322px;
+}
+.benefits-card-dimension{
+  height: 170px !important;
+  width: 170px !important;
+  max-height: 170px !important;
+  max-width: 170px !important;
+}
