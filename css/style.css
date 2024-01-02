@@ -1,28 +1,41 @@
   /* Additional styles for dark mode */
-  /* body{
-    margin: 0 40px;
-  } */
+ 
 
   @media only screen and (min-width: 2800px) {
+    body{
+      letter-spacing: 1px;
+     }
     .crypto-ideas-block{
-      margin: 0 20%;
+      margin: 0 25%;
     }
     .benefits-block{
-      margin: 0 20%;
+      margin: 0 25%;
     }
     .experts-block{
-      margin: 0 20%;
+      margin: 0 25%;
     }
     .benefits-block{
-      margin: 0 20%;
+      margin: 0 25%;
     }
     .reports-block{
-      margin: 0 20%;
+      margin: 0 25%;
     }
     .services-block{
-      margin: 0 20%;
+      margin: 0 25%;
     }
- 
+    .media-container{
+      margin: 0 25% !important;
+      text-align: -webkit-center;
+    }
+    .media-container video{
+      width:"80%" ;
+      height:"320px";
+    }
+ .podcast-horizontal-line{
+  margin:  auto -8% auto -7%;
+  width: 63%;
+  background-color: #ec672a;
+}
   }
   .blogs-container{
     margin: 0 10%;
@@ -32,6 +45,12 @@
     color: #fff;
 }
 
+.research-block{
+  background:linear-gradient(to right, #f0ecea, #f5a585)
+}
+.dark-mode .research-block{
+  background:transparent
+}
 
 .dark-mode button {
   background-color: #ec672a !important;
@@ -114,6 +133,11 @@ header{
 }
 .media-container{
   margin: 0 25% !important;
+  text-align: -webkit-center;
+}
+.media-container video{
+  width:"100%" ;
+  height:"320px";
 }
 .dark-mode .cryto-ideas-cards::before{
   content: '';
@@ -182,11 +206,10 @@ header{
 }
 .block-content{
   margin: auto !important;
-  max-width: 80% !important;
 }
 .block-title{
-  margin-left: 10.5% !important;
-  max-width: 80% !important;
+  /* margin-left: 10.5% !important;
+  max-width: 80% !important; */
 }
 .weekly-cards{
   max-width: 228px !important;
@@ -209,12 +232,11 @@ header{
 }
 .podcast-horizontal-line{
   margin:  auto -8% auto -7%;
-  width: 20%;
+  width: 45%;
   background-color: #ec672a;
 }
 .disclaimer{
   padding: 4% 0;
-  border-top: 2px solid #ec672a !important;
 }
 .footer{
   border-top: 2px solid #ec672a !important;
