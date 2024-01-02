@@ -1,28 +1,35 @@
   /* Additional styles for dark mode */
  
 
-  @media only screen and (min-width: 2800px) {
+  @media only screen and (min-width: 2400px) {
     body{
       letter-spacing: 1px;
      }
+     nav{
+      margin: 0 22% !important;
+     }
     .crypto-ideas-block{
-      margin: 0 25%;
+      margin: 0 22% !important;
     }
     .benefits-block{
-      margin: 0 25%;
+      margin: 0 22% !important;
     }
     .experts-block{
-      margin: 0 25%;
+      margin: 0 22% !important;
     }
     .benefits-block{
-      margin: 0 25%;
+      margin: 0 22% !important;
     }
     .reports-block{
-      margin: 0 25%;
+      margin: 0 22% !important;
     }
     .services-block{
-      margin: 0 25%;
+      margin: 0 22% !important;
     }
+    .footer{
+      margin: 0 22% !important;
+    }
+    
     .media-container{
       margin: 0 25% !important;
       text-align: -webkit-center;
@@ -46,7 +53,7 @@
 }
 
 .research-block{
-  background:linear-gradient(to right, #f0ecea, #f5a585)
+  background:linear-gradient(to right, #f0ecea, #f7bca4)
 }
 .dark-mode .research-block{
   background:transparent
@@ -239,7 +246,7 @@ header{
   padding: 4% 0;
 }
 .footer{
-  border-top: 2px solid #ec672a !important;
+  margin: 0 5%;
 }
 
 .card {
@@ -268,8 +275,9 @@ header{
 .risk_targeting{
   height: auto; 
   max-height: auto;
-  width: 90%; 
-  max-width: 90%;
+  min-height: 400px;
+  width: 100%; 
+  max-width: 100%;
 }
 .benefits-card-dimension{
   height: 170px !important;
@@ -279,4 +287,42 @@ header{
 }
 .try-now{
   width: 20%;
+}
+
+.crypto-ideas-block{
+  margin: 0 5%;
+}
+.benefits-block{
+  margin: 0 5%;
+}
+.experts-block{
+  margin: 0 5%;
+}
+.benefits-block{
+  margin: 0 5%;
+}
+.reports-block{
+  margin: 0 5%;
+}
+.services-block{
+  margin: 0 5%;
+}
+nav{
+  margin: 0 5%;
+ }
+ /* footer div{
+  margin: 0 10% ;
+} */
+.sc-a6ebab5a-1{
+  height: auto;
+  min-height: 300px;
+  font-size: 35px !important;
+  font-weight: 700;
+  padding: 30px;
+  background-color: #e87d4b;
+  color: white;
+  border-radius: 10px;
+}
+.comming-soon{
+  filter: blur(6px);
 }
