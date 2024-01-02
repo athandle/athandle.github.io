@@ -52,8 +52,8 @@
     color: #fff;
 }
 
-.research-block{
-  background:linear-gradient(to right, #f0ecea, #f7bca4)
+.heading-margin{
+  margin-top: 120px !important;
 }
 .dark-mode .research-block{
   background:transparent
@@ -115,9 +115,10 @@ header{
 .reports-card-txt-container{
   height: auto !important;
   max-height: 220px !important;
+  font-weight: 600;
 }
 .dark-mode .reports-card-txt-container:hover{
-  text-decoration: underline;
+  text-decoration: underline 2px #ec672a;
   color: white;
 }
 .reports-card-txt-container:hover{
@@ -164,7 +165,7 @@ header{
 }
  .report-cards{
   background-color: rgb(235, 231, 231) !important;
-  padding: 0 10px;
+  padding: 0;
 }
 .dark-mode .podcast-card{
   background-color: #1c1c1d !important;
@@ -194,6 +195,7 @@ header{
 .image-container {
  /* Set the height of the container */
   overflow: hidden; /* Hide the overflow to keep the zoomed image within the container */
+
 }
 
 .zoomed-image {
@@ -289,7 +291,7 @@ header{
   width: 20%;
 }
 
-.crypto-ideas-block{
+/* .crypto-ideas-block{
   margin: 0 5%;
 }
 .benefits-block{
@@ -309,7 +311,7 @@ header{
 }
 nav{
   margin: 0 5%;
- }
+ } */
  /* footer div{
   margin: 0 10% ;
 } */
@@ -325,4 +327,33 @@ nav{
 }
 .comming-soon{
   filter: blur(6px);
+}
+.service-card{
+  border: 2px solid #e87d4b;
+  padding: 20px;
+  border-radius: 5px;
+}
+.footer-container{
+  padding: 5rem 5rem 7rem;
+}
+.image-link{
+  max-width: 20px;
+  max-height: 20px;
+}
+.img-box1{
+  flex: 1;
+}
+.text-box1{
+  flex: 1;
+}
+.right-box{
+  margin-bottom: 0.5rem
+}
+.container{
+  margin: auto;
+  max-width: 80%;
+}
+.cover-screen{
+  background-color: #141414;
+  color: white;
 }
