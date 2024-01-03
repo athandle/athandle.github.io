@@ -8,6 +8,9 @@
   <title> Light || Dark Mode </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+ 
   <link rel="icon" href="Images/icon.png" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -75,19 +78,12 @@
 </header>
   
  
-  <script>
-    function selectButton(button) {
-      // Remove the 'selected' class from all buttons
-      var buttons = document.querySelectorAll('.button');
-      buttons.forEach(function (btn) {
-        btn.classList.remove('active-category');
-      });
-  
-      // Add the 'selected' class to the clicked button
-      button.classList.add('active-category');
-    }
-  </script>
-  
+<script>
+  // JavaScript to add a class on button click
+  document.getElementById('blog-category-btn').addEventListener('click', function() {
+    this.classList.add('active-border');
+  });
+</script>
   <!-- ========== END HEADER ========== -->
   <!-- Blogs section -->
   <!-- Card Blog -->
@@ -99,19 +95,62 @@
             of every engagement with Preline.</p>
         </div>
       </div>
-    <div class=" px-4 sm:px-6 lg:px-8 py-20 text-left reports-block space-x-4">
-        <button type="button" id="blog-category-btn" onclick="selectButton(this)" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none  active-category">
+    <div class="flex px-1 sm:px-2 lg:px-1 pt-2 pb-12 text-left reports-block space-x-2">
+    
+      <div x-data="{ isButtonClicked: true }" @click.away="isButtonClicked = false">
+        <button
+          type="button"
+          id="blog-category-btn"
+          @click="isButtonClicked = !isButtonClicked"
+          x-bind:class="{ 'active-border': isButtonClicked }"
+          class="py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50"
+        >
           All Market Research
         </button>
-        <button type="button" id="blog-category-btn" onclick="selectButton(this)" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none active-category">
+        </div>
+        <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+          <button
+            type="button"
+            id="blog-category-btn"
+            @click="isButtonClicked = !isButtonClicked"
+            x-bind:class="{ 'active-border': isButtonClicked }"
+            class="py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50"
+          >
+          Premimum Research
+          </button>
+          </div>
+          <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+            <button
+              type="button"
+              id="blog-category-btn"
+              @click="isButtonClicked = !isButtonClicked"
+              x-bind:class="{ 'active-border': isButtonClicked }"
+              class="py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50"
+            >
+            Free Research
+            </button>
+            </div>
+            <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+              <button
+                type="button"
+                id="blog-category-btn"
+                @click="isButtonClicked = !isButtonClicked"
+                x-bind:class="{ 'active-border': isButtonClicked }"
+                class="py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50"
+              >
+              Smart Money
+              </button>
+              </div>
+      
+        <!-- <button type="button" id="blog-category-btn" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-blue-500 focus:border-orange-500 focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50 active-category">
           Premimum Research
         </button>
-        <button type="button" id="blog-category-btn" onclick="selectButton(this)" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none active-category">
+        <button type="button" id="blog-category-btn" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-blue-500 focus:border-orange-500 focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50 active-category">
           Free Research
         </button>
-        <button type="button" id="blog-category-btn" onclick="selectButton(this)" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none active-category">
+        <button type="button" id="blog-category-btn" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-blue-500 focus:border-orange-500 focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50 active-category">
           Smart Money
-        </button>
+        </button> -->
        </div>
       
   </div>
@@ -179,7 +218,7 @@
   <!-- End Card Blog -->
   <div class="mt-12 text-center">
     <a class="py-3 px-4 inline-flex stndrd-btn price-container items-center gap-x-1 text-sm font-medium rounded-full border border-gray-200 bg-white text-blue-600 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-blue-500 dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-      href="#">
+      href="/js/reports.html">
       Read more
       <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -191,13 +230,13 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap text-left lg:text-left">
         <div class="w-full lg:w-6/12 px-4">
-          <h4 class="text-3xl fonat-semibold text-blueGray-700">BlackRabbit.com</h4>
+          <h4 class="text-3xl fonat-semibold text-blueGray-700 theme-color">BlackRabbit.com</h4>
           <!-- <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
             Find us on any of these platforms, we respond 1-2 business days.
           </h5> -->
           <div class="mt-6 lg:mb-0 mb-6">
-            <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-              <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <button class=" social-handles bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <i class="fab fa-twitter"></i></button><button class="social-handles bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
               <i class="fab fa-linkedin"></i>
             </button>
           </div>
@@ -240,7 +279,7 @@
       <hr class="my-6 border-blueGray-300">
       <div class="flex flex-wrap items-center md:justify-between justify-center">
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-          <div class="text-sm text-blueGray-500 font-semibold py-1">
+          <div class="text-sm text-blueGray-500 font-semibold py-1 theme-color">
             Copyright © <span id="get-current-year">2021</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by
             <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
 

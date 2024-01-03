@@ -59,6 +59,11 @@
   background:transparent
 }
 
+.social-handles{
+  background-color: #ec672a !important;
+  color: #fff !important;
+}
+
 .dark-mode button {
   background-color: #ec672a !important;
     color: #fff;
@@ -70,7 +75,7 @@
 }
 .dark-mode .active-category{
  background-color: black !important;
- border: 1px solid white !important;
+ border: 1px solid white ;
 }
 .dark-mode .reports-card{
   color: white !important
@@ -162,7 +167,6 @@ header{
 }
 .dark-mode .report-cards{
   background-color: #141414 !important;
-  padding: 0 10px;
 }
  .report-cards{
   background-color: rgb(235, 231, 231) !important;
@@ -231,12 +235,12 @@ header{
   max-height: 224px !important;
 }
 .horizontal-line{
-  margin:  auto -10% auto -5%;
+  margin:  auto 0% auto 2%;
   width: 75%;
   background-color: #ec672a;
 }
 .crypto-horizontal-line{
-  margin:  auto -8% auto -1.5%;
+  margin:  auto 0% auto 2%;
   width: 68%;
   background-color: #ec672a;
 }
@@ -250,6 +254,9 @@ header{
 }
 .footer{
   margin: 0 5%;
+}
+footer{
+  margin-top: 10%;
 }
 
 .card {
@@ -336,6 +343,8 @@ nav{
   border: 2px solid #e87d4b;
   padding: 20px;
   border-radius: 5px;
+  max-height: 203px;
+  height: 203px;
 }
 .footer-container{
   padding: 5rem 5rem 7rem;
@@ -358,10 +367,45 @@ nav{
   max-width: 80%;
 }
 .cover-screen{
-  background-color: #141414;
+  background-color: black;
   color: white;
 }
 .subscribe{
   max-width: 605px !important;
   min-width: 400px !important;
+}
+footer{
+  background-color: black !important;
+  color:white
+}
+.dark-mode footer{
+  background-color: #1c1c1d !important;
+}
+.card-section{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+.left-nav{
+  margin-left: -5%;
+}
+.right-nav{
+  margin-right: -5%;
+}
+.active-border {
+  border: 1px solid #ec672a !important;;
+}
+.dark-mode .active-border {
+  border: 1px solid white !important;;
+}
+.in-active-border {
+  border: 1px solid white !important;;
 }
