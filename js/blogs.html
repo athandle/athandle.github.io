@@ -10,7 +10,10 @@
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
- 
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Include the Splide stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
+
   <link rel="icon" href="Images/icon.png" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -18,131 +21,115 @@
 <body>
   <!-- ========== HEADER ========== -->
   <header
-  class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 sm:py-0 dark:bg-slate-900">
-  <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
-    aria-label="Global">
-    <div class="flex items-center justify-between">
-      <a class="flex-none text-xl font-semibold theme-color" href="/" aria-label="Brand">Black Rabbit</a>
-      <button id="themeToggle" type="button"
-        class="ml-4 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
-        data-hs-theme-click-value="dark">
-        <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-        </svg>
-      </button>
-      <button id="themeToggle" type="button"
-        class="ml-4 hs-dark-mode-active:block hidden hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
-        data-hs-theme-click-value="light">
-        <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <circle cx="12" cy="12" r="4" />
-          <path d="M12 8a2 2 0 1 0 4 4" />
-          <path d="M12 2v2" />
-          <path d="M12 20v2" />
-          <path d="m4.93 4.93 1.41 1.41" />
-          <path d="m17.66 17.66 1.41 1.41" />
-          <path d="M2 12h2" />
-          <path d="M20 12h2" />
-          <path d="m6.34 17.66-1.41 1.41" />
-          <path d="m19.07 4.93-1.41 1.41" />
-        </svg>
-      </button>
-      <div class="sm:hidden">
-        <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="/js/blogs.html">Blogs</a>
-      </a>
-      <button type="button"
-        class="py-2 px-3 mr-2 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
-        Join Now
-      </button>
-      </div>
-    </div>
-    <div class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
-      <div
-        class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-      
-        <a class="font-medium sm:py-6 mr-4" href="#" aria-current="page">Landing</a>
-        <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="#">Account</a>
-        <a class="font-medium text-white/[.8] hover:text-gray sm:py-6  mr-4" href="#">Work</a>
-        <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="/js/blogs.html">Blogs</a>
-        </a>
-        <button type="button"
-          class="py-2 px-3 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
-          Join Now
+    class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 sm:py-0 dark:bg-slate-900">
+    <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      aria-label="Global">
+      <div class="flex items-center justify-between">
+        <a class="flex-none text-xl font-semibold theme-color" href="/" aria-label="Brand">Black Rabbit</a>
+        <button id="themeToggle" type="button"
+          class="ml-4 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
+          data-hs-theme-click-value="dark">
+          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
         </button>
+        <button id="themeToggle" type="button"
+          class="ml-4 hs-dark-mode-active:block hidden hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
+          data-hs-theme-click-value="light">
+          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 8a2 2 0 1 0 4 4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.93 4.93 1.41 1.41" />
+            <path d="m17.66 17.66 1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="m19.07 4.93-1.41 1.41" />
+          </svg>
+        </button>
+        <div class="sm:hidden">
+          <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="/js/blogs.html">Blogs</a>
+          </a>
+          <button type="button"
+            class="py-2 px-3 mr-2 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
+            Join Now
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
-  
- 
-<script>
-  // JavaScript to add a class on button click
-  document.getElementById('blog-category-btn').addEventListener('click', function() {
-    this.classList.add('active-border');
-  });
-</script>
+      <div class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div
+          class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+
+          <a class="font-medium sm:py-6 mr-4" href="#" aria-current="page">Landing</a>
+          <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="#">Account</a>
+          <a class="font-medium text-white/[.8] hover:text-gray sm:py-6  mr-4" href="#">Work</a>
+          <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="/js/blogs.html">Blogs</a>
+          </a>
+          <button type="button"
+            class="py-2 px-3 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
+            Join Now
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <script>
+    // JavaScript to add a class on button click
+    document.getElementById('blog-category-btn').addEventListener('click', function () {
+      this.classList.add('active-border');
+    });
+  </script>
   <!-- ========== END HEADER ========== -->
   <!-- Blogs section -->
   <!-- Card Blog -->
   <div class="overflow-hidden">
-     <div class=" px-4 sm:px-6 lg:px-8 pt-24 pb-10 text-left reports-block space-x-4">
-        <div >
-          <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white text-left theme-color">The Blog</h2>
-          <p class="mt-1 text-gray dark:text-white text-left">See how game-changing companies are making the most
-            of every engagement with Preline.</p>
-        </div>
+    <div class=" px-4 sm:px-6 lg:px-8 pt-24 pb-10 text-left reports-block space-x-4">
+      <div>
+        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white text-left theme-color">The Blog</h2>
+        <p class="mt-1 text-gray dark:text-white text-left">See how game-changing companies are making the most
+          of every engagement with Preline.</p>
       </div>
+    </div>
     <div class="flex px-1 sm:px-2 lg:px-1 pt-2 pb-12 text-left reports-block space-x-2">
-    
+
       <div x-data="{ isButtonClicked: true }" @click.away="isButtonClicked = false">
-        <button
-          type="button"
-          id="blog-category-btn"
-          @click="isButtonClicked = !isButtonClicked"
+        <button type="button" id="blog-category-btn" @click="isButtonClicked = !isButtonClicked"
           x-bind:class="{ 'active-border': isButtonClicked }"
-        class="blog-category-btn py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50"
-        >
+          class="blog-category-btn py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50">
           All Market Research
         </button>
-        </div>
-        <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
-          <button
-            type="button"
-            id="blog-category-btn"
-            @click="isButtonClicked = !isButtonClicked"
-            x-bind:class="{ 'active-border': isButtonClicked }"
-            class="blog-category-btn py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50"
-          >
+      </div>
+      <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+        <button type="button" id="blog-category-btn" @click="isButtonClicked = !isButtonClicked"
+          x-bind:class="{ 'active-border': isButtonClicked }"
+          class="blog-category-btn py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50">
           Premimum Research
-          </button>
-          </div>
-          <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
-            <button
-              type="button"
-              id="blog-category-btn"
-              @click="isButtonClicked = !isButtonClicked"
-              x-bind:class="{ 'active-border': isButtonClicked }"
-              class="blog-category-btn py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50"
-            >
-            Free Research
-            </button>
-            </div>
-            <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
-              <button
-                type="button"
-                id="blog-category-btn"
-                @click="isButtonClicked = !isButtonClicked"
-                x-bind:class="{ 'active-border': isButtonClicked }"
-                class="blog-category-btn py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50"
-              >
-              Smart Money
-              </button>
-              </div>
-      
-        <!-- <button type="button" id="blog-category-btn" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-blue-500 focus:border-orange-500 focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50 active-category">
+        </button>
+      </div>
+      <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+        <button type="button" id="blog-category-btn" @click="isButtonClicked = !isButtonClicked"
+          x-bind:class="{ 'active-border': isButtonClicked }"
+          class="blog-category-btn py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50">
+          Free Research
+        </button>
+      </div>
+      <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+        <button type="button" id="blog-category-btn" @click="isButtonClicked = !isButtonClicked"
+          x-bind:class="{ 'active-border': isButtonClicked }"
+          class="blog-category-btn py-3 mr-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border-solid dark:border-white focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50">
+          Smart Money
+        </button>
+      </div>
+
+      <!-- <button type="button" id="blog-category-btn" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-blue-500 focus:border-orange-500 focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50 active-category">
           Premimum Research
         </button>
         <button type="button" id="blog-category-btn" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-blue-500 focus:border-orange-500 focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50 active-category">
@@ -151,8 +138,8 @@
         <button type="button" id="blog-category-btn" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-blue-500 focus:border-orange-500 focus:outline-none bg-white text-gray shadow-sm hover:bg-gray-50 disabled:opacity-50 active-category">
           Smart Money
         </button> -->
-       </div>
-      
+    </div>
+
   </div>
   <!-- Card Blog -->
   <div class="reports-block">
@@ -160,12 +147,16 @@
       <div class="col-span-1 lg:col-span-1">
         <div class="img-box">
           <a id="link-0" href="/js/article.html">
-            <img id="image-0" style="border-radius: 6px;" src="https://www.wrightresearch.in/media/django-summernote/2023-12-16/12c3bf05-3189-40bc-adca-2f40fdae82fd.png" alt="AI Meets Finance: Revolutionizing the Indian Stock Market with Machine Learning Insights" class="img-fluid">
+            <img id="image-0" style="border-radius: 6px;"
+              src="https://www.wrightresearch.in/media/django-summernote/2023-12-16/12c3bf05-3189-40bc-adca-2f40fdae82fd.png"
+              alt="AI Meets Finance: Revolutionizing the Indian Stock Market with Machine Learning Insights"
+              class="img-fluid">
           </a>
         </div>
         <div class="text-box mt-12">
           <a id="link0-1" href="/js/article.html">
-            <p id="text-0" class="text-lg text-gray dark:text-white font-semibold">AI Meets Finance: Revolutionizing the Indian Stock Market with Machine Learning Insights</p>
+            <p id="text-0" class="text-lg text-gray dark:text-white font-semibold">AI Meets Finance: Revolutionizing the
+              Indian Stock Market with Machine Learning Insights</p>
             <p id="small-0" class="mt-3">Sonam Srivastava</p>
           </a>
         </div>
@@ -174,12 +165,15 @@
         <div class="flex flex-col lg:flex-row right-box">
           <div class="img-box1">
             <a id="link-1" href="/js/article.html">
-              <img id="image-1" style="border-radius: 6px;" src="https://www.wrightresearch.in/media/django-summernote/2023-07-05/44364939-952d-4cb6-879a-3fc76e269bc6.png" alt="Best Quantitative Investment Strategies of 2023" class="img-fluid">
+              <img id="image-1" style="border-radius: 6px;"
+                src="https://www.wrightresearch.in/media/django-summernote/2023-07-05/44364939-952d-4cb6-879a-3fc76e269bc6.png"
+                alt="Best Quantitative Investment Strategies of 2023" class="img-fluid">
             </a>
           </div>
           <div class="text-box1 pl-3">
             <a id="link1-1" href="/js/article.html">
-              <p id="text-1" class="text-lg text-gray dark:text-white font-semibold">Best Quantitative Investment Strategies of 2023</p>
+              <p id="text-1" class="text-lg text-gray dark:text-white font-semibold">Best Quantitative Investment
+                Strategies of 2023</p>
               <p id="small-1" class="text-sm text-gray dark:text-white mt-2">Siddharth Singh Bhaisora</p>
             </a>
           </div>
@@ -187,12 +181,16 @@
         <div class="flex flex-col lg:flex-row right-box">
           <div class="img-box1">
             <a id="link-2" href="/js/article.html">
-              <img id="image-2" style="border-radius: 6px;" src="https://www.wrightresearch.in/media/django-summernote/2023-12-02/94f91fdd-04fe-4718-9d09-e79b7f17b971.png" alt="Four Years of Wright Momentum: Mastering the Art of Building a Successful Momentum Strategy" class="img-fluid">
+              <img id="image-2" style="border-radius: 6px;"
+                src="https://www.wrightresearch.in/media/django-summernote/2023-12-02/94f91fdd-04fe-4718-9d09-e79b7f17b971.png"
+                alt="Four Years of Wright Momentum: Mastering the Art of Building a Successful Momentum Strategy"
+                class="img-fluid">
             </a>
           </div>
           <div class="text-box1 pl-3">
             <a id="link2-1" href="/js/article.html">
-              <p id="text-2" class="text-lg text-gray dark:text-white font-semibold">Four Years of Wright Momentum: Mastering the Art of Building a Successful Momentum Strategy</p>
+              <p id="text-2" class="text-lg text-gray dark:text-white font-semibold">Four Years of Wright Momentum:
+                Mastering the Art of Building a Successful Momentum Strategy</p>
               <p id="small-2" class="text-sm text-gray dark:text-white mt-2">Sonam Srivastava</p>
             </a>
           </div>
@@ -200,12 +198,15 @@
         <div class="flex flex-col lg:flex-row right-box">
           <div class="img-box1">
             <a id="link-3" href="/js/article.html" rel="">
-              <img id="image-3" style="border-radius: 6px;" src="https://www.wrightresearch.in/media/django-summernote/2023-11-29/f81fe5ee-413c-46fa-8ada-b6706a880f3b.png" alt="Best Quant Funds That Beat The Stock Market" class="img-fluid">
+              <img id="image-3" style="border-radius: 6px;"
+                src="https://www.wrightresearch.in/media/django-summernote/2023-11-29/f81fe5ee-413c-46fa-8ada-b6706a880f3b.png"
+                alt="Best Quant Funds That Beat The Stock Market" class="img-fluid">
             </a>
           </div>
           <div class="text-box1 pl-3">
             <a id="link3-1" href="/js/article.html">
-              <p id="text-3" class="text-lg text-gray dark:text-white font-semibold">Best Quant Funds That Beat The Stock Market</p>
+              <p id="text-3" class="text-lg text-gray dark:text-white font-semibold">Best Quant Funds That Beat The
+                Stock Market</p>
               <p id="small-3" class="text-sm text-gray dark:text-white mt-2">Siddharth Singh Bhaisora</p>
             </a>
           </div>
@@ -213,18 +214,409 @@
       </div>
     </div>
   </div>
-  
-<!-- End Card Blog -->
-  <!-- End Card Blog -->
-  <div class="mt-12 text-center">
-    <a class="py-3 px-4 inline-flex stndrd-btn price-container items-center gap-x-1 text-sm font-medium rounded-full border border-gray-200 bg-white text-blue-600 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-blue-500 dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-      href="/js/reports.html">
-      Read more
-      <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="m9 18 6-6-6-6" />
-      </svg>
-    </a>
+  <div class="overflow-hidden">
+    <div class="pagination-block px-4 sm:px-6 lg:px-8 pt-24 pb-10 text-left reports-block space-x-4">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+
+                <!-- Grid -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <a class="reports-card-group report-cards  rounded-md transition-all relative"
+                    href="/js/article.html">
+                    <span
+                      class="bg-green-100 text-green-800 lg:text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">Pro</span>
+                    <div class="">
+                      <div class="aspect-w-16 aspect-h-9 image-container">
+                        <img class="w-full object-cover zoomed-image"
+                          src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+                          alt="Image Description" style="height: 180px;">
+                      </div>
+                    </div>
+
+                    <div class="pr-2 pl-2 pb-2">
+                      <div class="flex justify-between">
+                        <p class="mt-2 lg:text-sm lg:text-sm text-gray dark:text-white">
+                          Sept 12,2022
+                        </p>
+                        <!-- <p class="mt-2 lg:text-sm lg:text-lg text-gray dark:text-white">
+                                          By-Aman
+                                        </p> -->
+                      </div>
+                      <h3
+                        class="mt-2 lg:text-lg lg:text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
+                        Unity’s inside sales team drives 80% of its revenue with Preline.
+                      </h3>
+                      <p class="text-gray text-xs lg:text-sm pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. </p>
+                    </div>
+                    <!-- <p class="mt-3 inline-flex items-center gap-x-1 lg:text-lg font-semibold text-gray dark:text-gray-200">
+                                      Learn more
+                                      <svg class="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6" />
+                                      </svg>
+                                    </p> -->
+                  </a>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <a class=" reports-card-group report-cards rounded-md  transition-all dark:hover:bg-white/[.05] relative"
+                    href="/js/article.html">
+                    <span
+                      class="bg-green-100 text-green-800 lg:text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">Pro</span>
+                    <div class="">
+                      <div class="aspect-w-16 aspect-h-10 image-container">
+                        <img class="w-full object-cover zoomed-image"
+                          src="https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80"
+                          alt="Image Description" style="height: 180px;">
+                      </div>
+                    </div>
+                    <div class="pl-2 pr-2 pb-2">
+                      <div class="flex justify-between">
+                        <p class="mt-2 lg:text-sm  lg:text-sm text-gray dark:text-white">
+                          Sept 12,2022
+                        </p>
+                        <!-- <p class="mt-2 lg:text-sm lg:text-lg text-gray dark:text-white">
+                                          By-Aman
+                                        </p> -->
+                      </div>
+                      <h3
+                        class="mt-2 lg:text-lg lg:text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
+                        Living Spaces creates a unified experience across the customer journey.
+                      </h3>
+                      <p class="text-gray text-xs lg:text-sm pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. </p>
+                    </div>
+                    <!-- <p class="mt-3 inline-flex items-center gap-x-1 lg:text-lg font-semibold text-gray dark:text-gray-200">
+                                      Learn more
+                                      <svg class="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6" />
+                                      </svg>
+                                    </p> -->
+                  </a>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <a class="reports-card-group report-cards rounded-md  transition-all dark:hover:bg-white/[.05] relative"
+                    href="/js/article.html">
+                    <span
+                      class="bg-green-100 text-green-800 lg:text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">Pro</span>
+                    <div class="">
+                      <div class="aspect-w-16 aspect-h-10  image-container">
+                        <img class="w-full object-cover zoomed-image"
+                          src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+                          alt="Image Description" style="height: 180px;">
+                      </div>
+                    </div>
+                    <div class="pl-2 pr-2 pb-2">
+                      <div class="flex justify-between">
+                        <p class="mt-2 lg:text-sm lg:text-sm text-gray dark:text-white">
+                          Sept 12,2022
+                        </p>
+                        <!-- <p class="mt-2 lg:text-sm lg:text-lg text-gray dark:text-white">
+                                          By-Aman
+                                        </p> -->
+                      </div>
+                      <h3
+                        class="mt-2 lg:text-lg lg:text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
+                        Atlassian powers sales and support at scale with Preline.
+                      </h3>
+                      <p class="text-gray text-xs lg:text-sm pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. </p>
+                    </div>
+                    <!-- <p class="mt-3 inline-flex items-center gap-x-1 lg:text-lg font-semibold text-gray dark:text-gray-200">
+                                      Learn more
+                                      <svg class="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6" />
+                                      </svg>
+                                    </p> -->
+                  </a>
+                </div>
+                <!-- End Grid -->
+                <!-- End Card -->
+              </div>
+              <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+
+                <!-- Grid -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <a class="reports-card-group report-cards  rounded-md transition-all relative"
+                    href="/js/article.html">
+                    <span
+                      class="bg-green-100 text-green-800 lg:text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">Pro</span>
+                    <div class="">
+                      <div class="aspect-w-16 aspect-h-9 image-container">
+                        <img class="w-full object-cover zoomed-image"
+                          src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+                          alt="Image Description" style="height: 180px;">
+                      </div>
+                    </div>
+
+                    <div class="pr-2 pl-2 pb-2">
+                      <div class="flex justify-between">
+                        <p class="mt-2 lg:text-sm lg:text-sm text-gray dark:text-white">
+                          Sept 12,2022
+                        </p>
+                        <!-- <p class="mt-2 lg:text-sm lg:text-lg text-gray dark:text-white">
+                                          By-Aman
+                                        </p> -->
+                      </div>
+                      <h3
+                        class="mt-2 lg:text-lg lg:text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
+                        Unity’s inside sales team drives 80% of its revenue with Preline.
+                      </h3>
+                      <p class="text-gray text-xs lg:text-sm pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. </p>
+                    </div>
+                    <!-- <p class="mt-3 inline-flex items-center gap-x-1 lg:text-lg font-semibold text-gray dark:text-gray-200">
+                                      Learn more
+                                      <svg class="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6" />
+                                      </svg>
+                                    </p> -->
+                  </a>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <a class=" reports-card-group report-cards rounded-md  transition-all dark:hover:bg-white/[.05] relative"
+                    href="/js/article.html">
+                    <span
+                      class="bg-green-100 text-green-800 lg:text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">Pro</span>
+                    <div class="">
+                      <div class="aspect-w-16 aspect-h-10 image-container">
+                        <img class="w-full object-cover zoomed-image"
+                          src="https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80"
+                          alt="Image Description" style="height: 180px;">
+                      </div>
+                    </div>
+                    <div class="pl-2 pr-2 pb-2">
+                      <div class="flex justify-between">
+                        <p class="mt-2 lg:text-sm  lg:text-sm text-gray dark:text-white">
+                          Sept 12,2022
+                        </p>
+                        <!-- <p class="mt-2 lg:text-sm lg:text-lg text-gray dark:text-white">
+                                          By-Aman
+                                        </p> -->
+                      </div>
+                      <h3
+                        class="mt-2 lg:text-lg lg:text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
+                        Living Spaces creates a unified experience across the customer journey.
+                      </h3>
+                      <p class="text-gray text-xs lg:text-sm pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. </p>
+                    </div>
+                    <!-- <p class="mt-3 inline-flex items-center gap-x-1 lg:text-lg font-semibold text-gray dark:text-gray-200">
+                                      Learn more
+                                      <svg class="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6" />
+                                      </svg>
+                                    </p> -->
+                  </a>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <a class="reports-card-group report-cards rounded-md  transition-all dark:hover:bg-white/[.05] relative"
+                    href="/js/article.html">
+                    <span
+                      class="bg-green-100 text-green-800 lg:text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 absolute report-new-tag">Pro</span>
+                    <div class="">
+                      <div class="aspect-w-16 aspect-h-10  image-container">
+                        <img class="w-full object-cover zoomed-image"
+                          src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+                          alt="Image Description" style="height: 180px;">
+                      </div>
+                    </div>
+                    <div class="pl-2 pr-2 pb-2">
+                      <div class="flex justify-between">
+                        <p class="mt-2 lg:text-sm lg:text-sm text-gray dark:text-white">
+                          Sept 12,2022
+                        </p>
+                        <!-- <p class="mt-2 lg:text-sm lg:text-lg text-gray dark:text-white">
+                                          By-Aman
+                                        </p> -->
+                      </div>
+                      <h3
+                        class="mt-2 lg:text-lg lg:text-xl reports-card-txt-container text-gray dark:text-gray-300 dark:hover:text-white">
+                        Atlassian powers sales and support at scale with Preline.
+                      </h3>
+                      <p class="text-gray text-xs lg:text-sm pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. </p>
+                    </div>
+                    <!-- <p class="mt-3 inline-flex items-center gap-x-1 lg:text-lg font-semibold text-gray dark:text-gray-200">
+                                      Learn more
+                                      <svg class="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6" />
+                                      </svg>
+                                    </p> -->
+                  </a>
+                </div>
+                <!-- End Grid -->
+                <!-- End Card -->
+              </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="flex justify-end">
+            <nav class="flex items-center -space-x-px">
+              <button type="button"
+                class="pagination-btn pagination-frst min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm first:rounded-s-lg last:rounded-e-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+                <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+                <span aria-hidden="true" class="sr-only">Previous</span>
+              </button>
+              <div x-data="{ isButtonClicked: true }" @click.away="isButtonClicked = false">
+                <button type="button" id="blog-category-btn" @click="isButtonClicked = !isButtonClicked"
+                  x-bind:class="{ 'activate-page': isButtonClicked }"
+                  class="pagination-btn min-h-[38px] min-w-[38px] flex justify-center items-center bg-gray-200 text-gray-800 border border-grey-800 py-2 px-3 text-sm first:rounded-s-lg last:rounded-e-lg focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-600 dark:border-gray-700 dark:text-white dark:focus:bg-gray-500">
+                  1
+                </button>
+              </div>
+              <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+                <button type="button" id="blog-category-btn" @click="isButtonClicked = !isButtonClicked"
+                  x-bind:class="{ 'activate-page': isButtonClicked }"
+                  class="pagination-btn min-h-[38px] min-w-[38px] flex justify-center items-center bg-gray-200 text-gray-800 border border-grey-800 py-2 px-3 text-sm first:rounded-s-lg last:rounded-e-lg focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-600 dark:border-gray-700 dark:text-white dark:focus:bg-gray-500">
+                  2
+                </button>
+              </div>
+              <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+                <button type="button" id="blog-category-btn" @click="isButtonClicked = !isButtonClicked"
+                  x-bind:class="{ 'activate-page': isButtonClicked }"
+                  class="pagination-btn min-h-[38px] min-w-[38px] flex justify-center items-center bg-gray-200 text-gray-800 border border-grey-800 py-2 px-3 text-sm first:rounded-s-lg last:rounded-e-lg focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-600 dark:border-gray-700 dark:text-white dark:focus:bg-gray-500">
+                  3
+                </button>
+              </div>
+              <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+                <button type="button" id="blog-category-btn" @click="isButtonClicked = !isButtonClicked"
+                  x-bind:class="{ 'activate-page': isButtonClicked }"
+                  class="pagination-btn min-h-[38px] min-w-[38px] flex justify-center items-center bg-gray-200 text-gray-800 border border-grey-800 py-2 px-3 text-sm first:rounded-s-lg last:rounded-e-lg focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-600 dark:border-gray-700 dark:text-white dark:focus:bg-gray-500">
+                  ...
+                </button>
+              </div>
+              <div x-data="{ isButtonClicked: false }" @click.away="isButtonClicked = false">
+                <button type="button" id="blog-category-btn" @click="isButtonClicked = !isButtonClicked"
+                  x-bind:class="{ 'activate-page': isButtonClicked }"
+                  class="pagination-btn min-h-[38px] min-w-[38px] flex justify-center items-center bg-gray-200 text-gray-800 border border-grey-800 py-2 px-3 text-sm first:rounded-s-lg last:rounded-e-lg focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-600 dark:border-gray-700 dark:text-white dark:focus:bg-gray-500">
+                  8
+                </button>
+              </div>
+              <!-- <button type="button" class="pagination-btn min-h-[38px] min-w-[38px] flex justify-center items-center border border-gray-200 text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm first:rounded-s-lg last:rounded-e-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">2</button>
+                  <button type="button" class="pagination-btn min-h-[38px] min-w-[38px] flex justify-center items-center border border-gray-200 text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm first:rounded-s-lg last:rounded-e-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">3</button>
+
+                  <button type="button" class="pagination-btn min-h-[38px] min-w-[38px] flex justify-center items-center border border-gray-200 text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm first:rounded-s-lg last:rounded-e-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">...</button>
+                 
+                  <button type="button" class="pagination-btn min-h-[38px] min-w-[38px] flex justify-center items-center border border-gray-200 text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm first:rounded-s-lg last:rounded-e-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">8</button> -->
+              <button type="button"
+                class="pagination-btn pagination-lst min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm first:rounded-s-lg last:rounded-e-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+                <span aria-hidden="true" class="sr-only">Next</span>
+                <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </button>
+            </nav>
+          </div>
+          <!-- End Pagination -->
+        </div>
+
+        <!-- Navigation controls -->
+
+      </div>
+    </div>
+
+  </div>
+ 
+
+  <div class="reports-block">
+    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white text-left theme-color mb-4 mt-12">Popular
+      reads this week
+    </h2>
+    <div class="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+      <div class="col-span-1 lg:col-span-1">
+        <div class="img-box">
+          <a id="link-0" href="/js/article.html">
+            <img id="image-0" style="border-radius: 6px;"
+              src="https://www.wrightresearch.in/media/django-summernote/2023-12-16/12c3bf05-3189-40bc-adca-2f40fdae82fd.png"
+              alt="AI Meets Finance: Revolutionizing the Indian Stock Market with Machine Learning Insights"
+              class="img-fluid">
+          </a>
+        </div>
+        <div class="text-box mt-12">
+          <a id="link0-1" href="/js/article.html">
+            <p id="text-0" class="text-lg text-gray dark:text-white font-semibold">AI Meets Finance: Revolutionizing the
+              Indian Stock Market with Machine Learning Insights</p>
+            <p id="small-0" class="mt-3">Sonam Srivastava</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-span-1 lg:col-span-1">
+        <div class="flex flex-col lg:flex-row right-box">
+          <div class="img-box1">
+            <a id="link-1" href="/js/article.html">
+              <img id="image-1" style="border-radius: 6px;"
+                src="https://www.wrightresearch.in/media/django-summernote/2023-07-05/44364939-952d-4cb6-879a-3fc76e269bc6.png"
+                alt="Best Quantitative Investment Strategies of 2023" class="img-fluid">
+            </a>
+          </div>
+          <div class="text-box1 pl-3">
+            <a id="link1-1" href="/js/article.html">
+              <p id="text-1" class="text-lg text-gray dark:text-white font-semibold">Best Quantitative Investment
+                Strategies of 2023</p>
+              <p id="small-1" class="text-sm text-gray dark:text-white mt-2">Siddharth Singh Bhaisora</p>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row right-box">
+          <div class="img-box1">
+            <a id="link-2" href="/js/article.html">
+              <img id="image-2" style="border-radius: 6px;"
+                src="https://www.wrightresearch.in/media/django-summernote/2023-12-02/94f91fdd-04fe-4718-9d09-e79b7f17b971.png"
+                alt="Four Years of Wright Momentum: Mastering the Art of Building a Successful Momentum Strategy"
+                class="img-fluid">
+            </a>
+          </div>
+          <div class="text-box1 pl-3">
+            <a id="link2-1" href="/js/article.html">
+              <p id="text-2" class="text-lg text-gray dark:text-white font-semibold">Four Years of Wright Momentum:
+                Mastering the Art of Building a Successful Momentum Strategy</p>
+              <p id="small-2" class="text-sm text-gray dark:text-white mt-2">Sonam Srivastava</p>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row right-box">
+          <div class="img-box1">
+            <a id="link-3" href="/js/article.html" rel="">
+              <img id="image-3" style="border-radius: 6px;"
+                src="https://www.wrightresearch.in/media/django-summernote/2023-11-29/f81fe5ee-413c-46fa-8ada-b6706a880f3b.png"
+                alt="Best Quant Funds That Beat The Stock Market" class="img-fluid">
+            </a>
+          </div>
+          <div class="text-box1 pl-3">
+            <a id="link3-1" href="/js/article.html">
+              <p id="text-3" class="text-lg text-gray dark:text-white font-semibold">Best Quant Funds That Beat The
+                Stock Market</p>
+              <p id="small-3" class="text-sm text-gray dark:text-white mt-2">Siddharth Singh Bhaisora</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <footer class="relative bg-blueGray-200 pt-8 pb-6">
     <div class="container mx-auto px-4">
@@ -235,8 +627,12 @@
             Find us on any of these platforms, we respond 1-2 business days.
           </h5> -->
           <div class="mt-6 lg:mb-0 mb-6">
-            <button class=" social-handles bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-              <i class="fab fa-twitter"></i></button><button class="social-handles bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <button
+              class=" social-handles bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
+              <i class="fab fa-twitter"></i></button><button
+              class="social-handles bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
               <i class="fab fa-linkedin"></i>
             </button>
           </div>
@@ -246,33 +642,40 @@
             <div class="w-full lg:w-4/12 px-4 ml-auto">
               <!-- <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span> -->
               <ul class="list-unstyled">
-                
+
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/js/blogs.html">Landing</a>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="/js/blogs.html">Landing</a>
                 </li>
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/js/blogs.html">Account</a>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="/js/blogs.html">Account</a>
                 </li>
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/js/blogs.html">Work</a>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="/js/blogs.html">Work</a>
                 </li>
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/js/blogs.html">Blogs</a>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="/js/blogs.html">Blogs</a>
                 </li>
               </ul>
             </div>
             <div class="w-full lg:w-4/12 px-4">
               <!-- <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span> -->
               <ul class="list-unstyled">
-               
+
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/js/blogs.html">Privacy Policy</a>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="/js/blogs.html">Privacy Policy</a>
                 </li>
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/js/blogs.html">Contact Us</a>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="mailto:'abc@blackrabbit.com">Contact Us</a>
                 </li>
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/js/blogs.html">Carrers</a>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="/js/blogs.html">Carrers</a>
                 </li>
               </ul>
             </div>
@@ -281,19 +684,20 @@
       </div>
       <hr class="my-6 border-blueGray-300">
       <div class="flex flex-wrap items-center md:justify-between justify-center">
-        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="w-full md:w-4/12 pr-4 text-left">
           <div class="text-sm text-blueGray-500 font-semibold py-1 theme-color">
             Copyright © 2023<a href="/index.html" class="text-blueGray-500 hover:text-gray-800" target="_blank">
-            <a href="/index.html" class="text-blueGray-500 hover:text-blueGray-800">BlackRabbit</a>.
+              <a href="/index.html" class="text-blueGray-500 hover:text-blueGray-800">BlackRabbit</a>.
 
           </div>
-          
+
         </div>
         <div class="text-sm text-blueGray-500 font-semibold py-1">
           The reports we publish at blackrabbit is for research purposes only and not
-  financial advice. Confirm information independently. Bitcoin and digital assets are risky—never invest more than
-  you're willing to lose. Do your own research; this report is for education, not investment decisions. Not
-  financial or investment advice. Any capital-related decisions you make are your full responsibility.
+          financial advice. Confirm information independently. Bitcoin and digital assets are risky—never invest more
+          than
+          you're willing to lose. Do your own research; this report is for education, not investment decisions. Not
+          financial or investment advice. Any capital-related decisions you make are your full responsibility.
         </div>
       </div>
     </div>

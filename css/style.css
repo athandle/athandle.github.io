@@ -21,7 +21,7 @@
       margin: 0 22% !important;
     }
     .reports-block{
-      margin: 0 22% !important;
+      padding: 5% 22% !important;
     }
     .services-block{
       margin: 0 22% !important;
@@ -312,7 +312,7 @@ footer{
   margin: 0 5%;
 }
 .reports-block{
-  margin: 0 5%;
+  padding: 5% 5%;
 }
 .services-block{
   margin: 0 5%;
@@ -419,4 +419,40 @@ footer{
   border: 2px solid white !important;
   color: white !important;
   background-color: #ec672a !important;
+}
+.pagination-btn{
+  min-height: 38px !important;
+  background-color: transparent !important;
+}
+.dark-mode .pagination-btn{
+  min-height: 38px !important;
+  background-color: transparent !important;
+}
+.activate-page{
+  background-color: #ec672a !important;
+  color:white !important;
+}
+.dark-mode .activate-page{
+  background-color: #ec672a !important;
+  color:white !important;
+}
+.pagination-frst{
+ border-bottom-left-radius: 10px !important;
+ border-top-left-radius: 10px !important;
+}
+.pagination-lst{
+  border-bottom-right-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+.pagination-frst:hover{
+  background-color: #ec672a !important;
+}
+.pagination-lst:hover{
+  background-color: #ec672a !important;
+}
+.pagination-block{
+  background-color: #F5F5F5;
+}
+.dark-mode .pagination-block{
+  background-color: #141414 !important;
 }
