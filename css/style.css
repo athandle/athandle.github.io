@@ -29,6 +29,9 @@
     .footer{
       margin: 0 22% !important;
     }
+    .cover-screen{
+      margin: 0 22% !important;
+    }
     
     .media-container{
       margin: 0 25% !important;
@@ -291,7 +294,7 @@ header{
   width: 20%;
 }
 
-/* .crypto-ideas-block{
+.crypto-ideas-block{
   margin: 0 5%;
 }
 .benefits-block{
@@ -309,9 +312,12 @@ header{
 .services-block{
   margin: 0 5%;
 }
+.cover-screen{
+  margin: 0 5%;
+}
 nav{
   margin: 0 5%;
- } */
+ }
  /* footer div{
   margin: 0 10% ;
 } */
