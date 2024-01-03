@@ -47,9 +47,6 @@
   background-color: #ec672a;
 }
   }
-  .blogs-container{
-    margin: 0 10%;
-  }
   .dark-mode {
     background-color: black;
     color: #fff;
@@ -69,6 +66,7 @@
 .active-category{
   background-color: white !important;
   border: 1px solid black !important;
+  margin-left: 4rem !important;
 }
 .dark-mode .active-category{
  background-color: black !important;
