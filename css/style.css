@@ -34,7 +34,7 @@
     }
     
     .media-container{
-      margin: 0 25% !important;
+      margin: 0 22% !important;
       text-align: -webkit-center;
     }
     .media-container video{
@@ -362,4 +362,8 @@ nav{
 .cover-screen{
   background-color: #141414;
   color: white;
+}
+.subscribe{
+  max-width: 605px !important;
+  min-width: 400px !important;
 }
