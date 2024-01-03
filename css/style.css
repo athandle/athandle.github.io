@@ -400,12 +400,23 @@ footer{
 .right-nav{
   margin-right: -5%;
 }
-.active-border {
-  border: 1px solid #ec672a !important;;
-}
-.dark-mode .active-border {
-  border: 1px solid white !important;;
-}
+
 .in-active-border {
   border: 1px solid white !important;;
+}
+.dark-mode .blog-category-btn{
+  background-color: transparent !important;
+}
+.blog-category-btn{
+  background-color: transparent !important;
+}
+.active-border {
+  border: 2px solid white !important;
+  color: white;
+  background-color: #ec672a !important;
+}
+.dark-mode .active-border {
+  border: 2px solid white !important;
+  color: white !important;
+  background-color: #ec672a !important;
 }
