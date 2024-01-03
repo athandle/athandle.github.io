@@ -30,7 +30,7 @@
       margin: 0 22% !important;
     }
     .cover-screen{
-      margin: 0 22% !important;
+      padding: 0 22% 0 22% !important;
     }
     
     .media-container{
@@ -313,7 +313,7 @@ header{
   margin: 0 5%;
 }
 .cover-screen{
-  margin: 0 5%;
+  padding: 0 5% 5% 0;
 }
 nav{
   margin: 0 5%;
