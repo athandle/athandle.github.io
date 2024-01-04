@@ -1,62 +1,12 @@
-  /* Additional styles for dark mode */
- 
 
-  @media only screen and (min-width: 2400px) {
-    body{
-      letter-spacing: 1px;
-     }
-     nav{
-      margin: 0 22% !important;
-     }
-    .crypto-ideas-block{
-      margin: 0 22% !important;
-    }
-    .benefits-block{
-      margin: 0 22% !important;
-    }
-    .experts-block{
-      margin: 0 22% !important;
-    }
-    .benefits-block{
-      margin: 0 22% !important;
-    }
-    .reports-block{
-      padding: 5% 22% !important;
-    }
-    .blogs-categories{
-      padding: 1% 22%;
-    }
-    .services-block{
-      margin: 0 22% !important;
-    }
-    .footer{
-      margin: 0 22% !important;
-    }
-    .cover-screen{
-      padding: 0 22% 0 22% !important;
-    }
-    
-    .media-container{
-      margin: 0 22% !important;
-      text-align: -webkit-center;
-    }
-    .media-container video{
-      width:"80%" ;
-      height:"320px";
-    }
- .podcast-horizontal-line{
-  margin:  auto -8% auto -7%;
-  width: 63%;
-  background-color: #ec672a;
-}
-  }
+
   .dark-mode {
     background-color: black;
     color: #fff;
 }
 
 .heading-margin{
-  margin-top: 120px !important;
+  margin-top: 10% !important;
 }
 .dark-mode .research-block{
   background:transparent
@@ -462,3 +412,158 @@ footer{
 .dark-mode .pagination-block{
   background-color: #141414 !important;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body{
+    letter-spacing: 1px;
+   }
+   nav{
+    margin: 0 22% !important;
+   }
+  .crypto-ideas-block{
+    margin: 0 22% !important;
+  }
+  .benefits-block{
+    margin: 0 22% !important;
+  }
+  .experts-block{
+    margin: 10% 22% !important;
+  }
+  .benefits-block{
+    margin: 0 22% !important;
+  }
+  .reports-block{
+    padding: 5% 22% !important;
+  }
+  .blogs-categories{
+    padding: 1% 22%;
+  }
+  .services-block{
+    margin: 0 22% !important;
+  }
+  .footer{
+    padding: 0 22% !important;
+  }
+  .cover-screen{
+    padding: 0 22% 0 22% !important;
+  }
+  .block-content{
+    margin: auto !important;
+  }
+  .media-container{
+    margin: 0 22% !important;
+    text-align: -webkit-center;
+  }
+  .media-container video{
+    width:"80%" ;
+    height:"320px";
+  }
+.podcast-horizontal-line{
+margin:  auto -8% auto -7%;
+width: 63%;
+background-color: #ec672a;
+}
+}
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  /* Your styles for screens between 1025px and 1440px */
+  body{
+    letter-spacing: 1px;
+   }
+   nav{
+    margin: 0 25% !important;
+   }
+  .crypto-ideas-block{
+    margin: 0 25% !important;
+  }
+  .benefits-block{
+    margin: 0 25% !important;
+  }
+  .experts-block{
+    margin: 10% 25% !important;
+  }
+  .benefits-block{
+    margin: 10% 25% !important;
+  }
+  .reports-block{
+    padding: 5% 25% !important;
+  }
+  .blogs-categories{
+    padding: 1% 25%;
+  }
+  .services-block{
+    margin: 0 25% !important;
+  }
+  .footer{
+    padding: 0 25% !important;
+  }
+  .cover-screen{
+    padding: 0 25% 0 25% !important;
+  }
+  .block-content{
+    margin: auto !important;
+  }
+  .media-container{
+    margin: 0 25% !important;
+    text-align: -webkit-center;
+  }
+  .media-container video{
+    width:"80%" ;
+    height:"320px";
+  }
+.podcast-horizontal-line{
+margin:  auto -8% auto -7%;
+width: 63%;
+background-color: #ec672a;
+}
+}
+@media screen and (min-width: 2561px) and (max-width: 2840px) {
+  body{
+    letter-spacing: 1px;
+   }
+   nav{
+    margin: 0 40% !important;
+   }
+  .crypto-ideas-block{
+    margin: 0 40% !important;
+  }
+  .benefits-block{
+    margin: 0 40% !important;
+  }
+  .experts-block{
+    margin: 10% 40% !important;
+  }
+  .benefits-block{
+    margin: 10% 40% !important;
+  }
+  .reports-block{
+    padding: 5% 40% !important;
+  }
+  .blogs-categories{
+    padding: 1% 40%;
+  }
+  .services-block{
+    margin: 10% 40% !important;
+  }
+  .footer{
+    padding: 0 40% !important;
+  }
+  .cover-screen{
+    padding: 0 40% 0 40% !important;
+  }
+  .block-content{
+    margin: auto !important;
+  }
+  .media-container{
+    margin: 0 40% !important;
+    text-align: -webkit-center;
+  }
+  .media-container video{
+    width:"80%" ;
+    height:"320px";
+  }
+.podcast-horizontal-line{
+margin:  auto -8% auto -7%;
+width: 63%;
+background-color: #ec672a;
+}
+}
+
