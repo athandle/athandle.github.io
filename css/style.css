@@ -23,6 +23,9 @@
     .reports-block{
       padding: 5% 22% !important;
     }
+    .blogs-categories{
+      padding: 1% 22%;
+    }
     .services-block{
       margin: 0 22% !important;
     }
@@ -313,6 +316,9 @@ footer{
 }
 .reports-block{
   padding: 5% 5%;
+}
+.blogs-categories{
+  padding: 1% 5%;
 }
 .services-block{
   margin: 0 5%;
