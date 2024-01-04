@@ -86,6 +86,9 @@ header{
 #themeToggle{
   background-color: transparent !important;
 }
+#themeToggleWeb{
+  background-color: transparent !important;
+}
 #themeToggle:focus{
   border: none !important;
   outline:  none !important;
@@ -599,6 +602,10 @@ background-color: #ec672a;
   #popup {
     min-height: 450px;
   }
+  .media-container{
+    margin: 0 5% !important;
+    text-align: -webkit-center;
+  }
 }
 .dark-mode #popup{
   background: rgb(25, 25, 25);
@@ -628,6 +635,10 @@ background-color: #ec672a;
   padding: 10px 20px;
   margin-top: 10px;
   cursor: pointer;
+}
+.dark-mode #closePopupBtnCancel{
+  background: white !important;
+  color: #ec672a !important;
 }
 
 #closePopupBtn:hover {
