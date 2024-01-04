@@ -15,12 +15,12 @@
 <body>
 <!-- ========== HEADER ========== -->
 <header
-class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 sm:py-0 dark:bg-slate-900">
+class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white lg:text-lg py-3 sm:py-0 dark:bg-slate-900">
 <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
   aria-label="Global">
   <div class="flex items-center justify-between">
     <a class="flex-none text-xl font-semibold theme-color" href="/" aria-label="Brand">Black Rabbit</a>
-    <button id="themeToggle" type="button"
+    <!-- <button id="themeToggle" type="button"
       class="ml-4 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
       data-hs-theme-click-value="dark">
       <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -28,7 +28,7 @@ class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-
         stroke-linejoin="round">
         <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
       </svg>
-    </button>
+    </button> -->
     <button id="themeToggle" type="button"
       class="ml-4 hs-dark-mode-active:block hidden hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
       data-hs-theme-click-value="light">
@@ -49,30 +49,49 @@ class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-
     </button>
     <div class="sm:hidden">
       <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="/js/blogs.html">Blogs</a>
-    </a>
-    <button type="button"
-      class="py-2 px-3 mr-2 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
-      Join Now
+      </a>
+      <!-- <button type="button"
+        class="py-2 px-3 stndrd-btn inline-flex items-center gap-x-2 lg:text-lg font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
+        Join Now
+      </button> -->
+      <button id="themeToggle" type="button"
+      class="ml-4 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
+      data-hs-theme-click-value="dark">
+      <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+      </svg>
     </button>
     </div>
   </div>
   <div class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
     <div
       class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-    
+
       <a class="font-medium sm:py-6 mr-4" href="#" aria-current="page">Landing</a>
       <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="#">Account</a>
       <a class="font-medium text-white/[.8] hover:text-gray sm:py-6  mr-4" href="#">Work</a>
       <a class="font-medium text-white/[.8] hover:text-gray sm:py-6 mr-4" href="/js/blogs.html">Blogs</a>
       </a>
-      <button type="button"
-        class="py-2 px-3 stndrd-btn inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
+      <!-- <button type="button"
+        class="py-2 px-3 stndrd-btn inline-flex items-center gap-x-2 lg:text-lg font-semibold rounded-lg border border-transparent bg-red-600 text-white  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1">
         Join Now
-      </button>
+      </button> -->
+      <button id="themeToggle" type="button"
+      class="ml-4 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-gray-600  font-medium dark:text-gray-400"
+      data-hs-theme-click-value="dark">
+      <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+      </svg>
+    </button>
     </div>
   </div>
 </nav>
 </header>
+
 <!-- ========== END HEADER ========== -->
 <!-- Blog Article -->
 <div class="overflow-hidden">

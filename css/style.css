@@ -265,7 +265,7 @@ footer{
   margin: 0 5%;
 }
 .reports-block{
-  padding: 5% 5%;
+  padding: 5% 5% 0% 5%;
 }
 .blogs-categories{
   padding: 1% 5%;
@@ -432,7 +432,7 @@ footer{
     margin: 0 22% !important;
   }
   .reports-block{
-    padding: 5% 22% !important;
+    padding: 0% 22% 0% 22%!important;
   }
   .blogs-categories{
     padding: 1% 22%;
@@ -484,7 +484,7 @@ background-color: #ec672a;
     margin: 10% 25% !important;
   }
   .reports-block{
-    padding: 5% 25% !important;
+    padding: 5% 25% 0% 25% !important;
   }
   .blogs-categories{
     padding: 1% 25%;
@@ -535,7 +535,7 @@ background-color: #ec672a;
     margin: 10% 40% !important;
   }
   .reports-block{
-    padding: 5% 40% !important;
+    padding: 5% 40% 0% 40% !important;
   }
   .blogs-categories{
     padding: 1% 40%;
