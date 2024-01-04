@@ -1,5 +1,4 @@
 
-
   .dark-mode {
     background-color: black;
     color: #fff;
@@ -326,10 +325,6 @@ nav{
   background-color: black;
   color: white;
 }
-.subscribe{
-  max-width: 605px !important;
-  min-width: 400px !important;
-}
 footer{
   background-color: black !important;
   color:white
@@ -462,6 +457,10 @@ margin:  auto -8% auto -7%;
 width: 63%;
 background-color: #ec672a;
 }
+.subscribe{
+  max-width: 605px !important;
+  min-width: 400px !important;
+}
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
   /* Your styles for screens between 1025px and 1440px */
@@ -514,6 +513,10 @@ margin:  auto -8% auto -7%;
 width: 63%;
 background-color: #ec672a;
 }
+.subscribe{
+  max-width: 605px !important;
+  min-width: 400px !important;
+}
 }
 @media screen and (min-width: 2561px) and (max-width: 2840px) {
   body{
@@ -565,6 +568,10 @@ margin:  auto -8% auto -7%;
 width: 63%;
 background-color: #ec672a;
 }
+.subscribe{
+  max-width: 605px !important;
+  min-width: 400px !important;
+}
 }
 #popupOverlay {
   display: none;
@@ -577,7 +584,7 @@ background-color: #ec672a;
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 767px) {
   #popupOverlay {
     display: none;
     position: fixed;
@@ -588,6 +595,9 @@ background-color: #ec672a;
     background: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
+  }
+  #popup {
+    min-height: 450px;
   }
 }
 .dark-mode #popup{
@@ -601,6 +611,7 @@ background-color: #ec672a;
   text-align: center;
   color: black;
 }
+
 
 #closePopupBtn {
   background: #ec672a;;
